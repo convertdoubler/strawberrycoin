@@ -120,14 +120,14 @@ public:
         nRejectBlockOutdatedMajority = 950;     
         nToCheckBlockUpgradeMajority = 1000;    
         nMinerThreads = 0;                      // Obsolete (**TODO**)
-        nTargetTimespan = 1 * 60;               // Airin: 1 day
-        nTargetSpacing = 1 * 60;                // Airin: 1 minute
+        nTargetTimespan = 2 * 60;               // Airin: 1 day
+        nTargetSpacing = 2 * 60;                // Airin: 2 minute
         nMaturity = 100;                        // Block maturity
         nMasternodeCountDrift = 20;             
-        nMaxMoneyOut = 398360470 * COIN;        // Max. Money is calculated by 2x premine value
+        nMaxMoneyOut = 398360470 * COIN;        // Max. Money in POW
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 512;                        // PoW End
+        nLastPOWBlock = 200;                        // PoW End
         nModifierUpdateBlock = 2147483000;          // Modify block on height (currently we do not have any)
         nZerocoinStartHeight = 2147483000;          // Zerocoin start height (currently we do not have any)
         nZerocoinStartTime = 2147483000;            // GMT: Tuesday, January 19, 2038 3:03:20 AM
@@ -242,8 +242,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Airin: 1 day
-        nTargetSpacing = 1 * 60;  // Airin: 1 minute
+        nTargetTimespan = 2 * 60; // Airin: 1 day
+        nTargetSpacing = 2 * 60;  // Airin: 2 minute
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nMaxMoneyOut = 398360470 * COIN;
@@ -343,7 +343,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
         nTargetTimespan = 24 * 60 * 60;         // Airin: 1 day
-        nTargetSpacing = 1 * 60;                // Airin: 1 minutes
+        nTargetSpacing = 2 * 60;                // Airin: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
 
         genesis.nTime = 1527379220;

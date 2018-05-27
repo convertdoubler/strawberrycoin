@@ -2121,13 +2121,10 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 0; 
 
     if (nHeight == 0) {
-        // Genesis block
-        nSubsidy = 0 * COIN;
+        nSubsidy = 0 * COIN; // Genesis block
     } else if (nHeight == 1) {
-        // PREMINE: Current available AIRIN 30.000.000
-        return 30000001 * COIN;
+        return 1500000 * COIN; // Premine
     } else if (nHeight > 1) {
-        // PoW/PoS - Phase lasts until - undefined)
         nSubsidy = 10 * COIN;
     } else {
         nSubsidy = 0 * COIN;
