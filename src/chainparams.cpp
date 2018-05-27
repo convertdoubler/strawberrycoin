@@ -119,7 +119,7 @@ public:
         pchMessageStart[2] = 0x1c;
         pchMessageStart[3] = 0xe5;
         vAlertPubKey = ParseHex("0494b3488594838306c1b91a8e4a802de046bd3f815c707f56a95f31ce8c55c947f4c2e878633fe288a35974952be12e819fe591677f845a99a85273142864b993");
-        nDefaultPort = 25992;                   
+        nDefaultPort = 18821;                   
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Airin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;       // Halving interval
         nMaxReorganizationDepth = 100;          

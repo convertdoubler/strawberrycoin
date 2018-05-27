@@ -67,7 +67,7 @@ POS Block Reward - 10 AIRIN
 Masernode Reward - dynamically adjustsed by Seesaw mechanism 
 Masernode Collateral   - 5000 AIRIN
 Difficulty Retarget - Every Block
-Port - 25992
+Port - 18821
  
 ``` LICENSE: The MIT License (MIT) Copyright (c) 2014-2018 The Airin Developers, see LICENSE for additional detail 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 

@@ -225,10 +225,10 @@ QT_TRANSLATE_NOOP("airin-core", ""
 QT_TRANSLATE_NOOP("airin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("airin-core", "(25992 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("airin-core", "(18821 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("airin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("airin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("airin-core", "(must be 25992 for mainnet)"),
+QT_TRANSLATE_NOOP("airin-core", "(must be 18821 for mainnet)"),
 QT_TRANSLATE_NOOP("airin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("airin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("airin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

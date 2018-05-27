@@ -3494,8 +3494,8 @@ https://www.transifex.com/airin-project/airin-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(25992 could be used only on mainnet)</source>
-        <translation>(25992 could be used only on mainnet)</translation>
+        <source>(18821 could be used only on mainnet)</source>
+        <translation>(18821 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3506,8 +3506,8 @@ https://www.transifex.com/airin-project/airin-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 25992 for mainnet)</source>
-        <translation>(deve ser 25992 para mainnet)</translation>
+        <source>(must be 18821 for mainnet)</source>
+        <translation>(deve ser 18821 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
