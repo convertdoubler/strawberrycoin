@@ -1,25 +1,25 @@
-# /etc/conf.d/syndicated: config file for /etc/init.d/syndicated
+# /etc/conf.d/airind: config file for /etc/init.d/airind
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/syndicate/syndicate.conf"
+#BITCOIND_CONFIGFILE="/etc/airin/airin.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/syndicated"
+#BITCOIND_PIDDIR="/var/run/airind"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/syndicated.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/airind.pid"
 
-# Where to write syndicated data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/syndicated"
+# Where to write airind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/airind"
 
-# User and group to own syndicated process
-#BITCOIND_USER="syndicate"
-#BITCOIND_GROUP="syndicate"
+# User and group to own airind process
+#BITCOIND_USER="airin"
+#BITCOIND_GROUP="airin"
 
-# Path to syndicated executable
-#BITCOIND_BIN="/usr/bin/syndicated"
+# Path to airind executable
+#BITCOIND_BIN="/usr/bin/airind"
 
-# Nice value to run syndicated under
+# Nice value to run airind under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

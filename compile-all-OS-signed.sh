@@ -4,14 +4,14 @@
 ./configure --prefix=`pwd`/depends/x86_64-pc-linux-gnu
 make -j4 -k
 mkdir -p build/v2.0.0.0/x86_64-pc-linux-gnu;
-cp ./src/syndicated ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicated;
-cp ./src/syndicate-tx ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicate-tx;
-cp ./src/syndicate-cli ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicate-cli;
-cp ./src/qt/syndicate-qt ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicate-qt;
-strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicated
-strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicate-tx
-strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicate-cli
-strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/syndicate-qt
+cp ./src/airind ./build/v2.0.0.0/x86_64-pc-linux-gnu/airind;
+cp ./src/airin-tx ./build/v2.0.0.0/x86_64-pc-linux-gnu/airin-tx;
+cp ./src/airin-cli ./build/v2.0.0.0/x86_64-pc-linux-gnu/airin-cli;
+cp ./src/qt/airin-qt ./build/v2.0.0.0/x86_64-pc-linux-gnu/airin-qt;
+strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/airind
+strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/airin-tx
+strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/airin-cli
+strip ./build/v2.0.0.0/x86_64-pc-linux-gnu/airin-qt
 
 cd build/v2.0.0.0/x86_64-pc-linux-gnu;
 cd ../../..;
@@ -24,14 +24,14 @@ make clean;cd src;make clean;cd ..;
 make HOST=x86_64-w64-mingw32 -j4 -k;
 
 mkdir -p build/v2.0.0.0/x86_64-w64-mingw32;
-cp ./src/syndicated.exe ./build/v2.0.0.0/x86_64-w64-mingw32/syndicated.exe;
-cp ./src/syndicate-tx.exe ./build/v2.0.0.0/x86_64-w64-mingw32/syndicate-tx.exe;
-cp ./src/syndicate-cli.exe ./build/v2.0.0.0/x86_64-w64-mingw32/syndicate-cli.exe;
-cp ./src/qt/syndicate-qt.exe ./build/v2.0.0.0/x86_64-w64-mingw32/syndicate-qt.exe;
-strip ./build/v2.0.0.0/x86_64-w64-mingw32/syndicated.exe
-strip ./build/v2.0.0.0/x86_64-w64-mingw32/syndicate-tx.exe
-strip ./build/v2.0.0.0/x86_64-w64-mingw32/syndicate-cli.exe
-strip ./build/v2.0.0.0/x86_64-w64-mingw32/syndicate-qt.exe
+cp ./src/airind.exe ./build/v2.0.0.0/x86_64-w64-mingw32/airind.exe;
+cp ./src/airin-tx.exe ./build/v2.0.0.0/x86_64-w64-mingw32/airin-tx.exe;
+cp ./src/airin-cli.exe ./build/v2.0.0.0/x86_64-w64-mingw32/airin-cli.exe;
+cp ./src/qt/airin-qt.exe ./build/v2.0.0.0/x86_64-w64-mingw32/airin-qt.exe;
+strip ./build/v2.0.0.0/x86_64-w64-mingw32/airind.exe
+strip ./build/v2.0.0.0/x86_64-w64-mingw32/airin-tx.exe
+strip ./build/v2.0.0.0/x86_64-w64-mingw32/airin-cli.exe
+strip ./build/v2.0.0.0/x86_64-w64-mingw32/airin-qt.exe
 ## created detached signatures
 cd build/v2.0.0.0/x86_64-w64-mingw32;
 
@@ -43,35 +43,35 @@ cd build/v2.0.0.0/x86_64-w64-mingw32;
 ##/OU= 	Organizational Unit 	IT Department
 ##/CN= 	Common Name 	example.com
 
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicate-qt-selfsigned.key -out ./syndicate-qt-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net";
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicated-selfsigned.key -out ./syndicated-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net";
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicate-tx-selfsigned.key -out ./syndicate-tx-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net"; 
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicate-cli-selfsigned.key -out ./syndicate-cli-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net"; 
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airin-qt-selfsigned.key -out ./airin-qt-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net";
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airind-selfsigned.key -out ./airind-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net";
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airin-tx-selfsigned.key -out ./airin-tx-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net"; 
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airin-cli-selfsigned.key -out ./airin-cli-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net"; 
 
-osslsigncode sign -certs syndicate-qt-selfsigned.crt -key syndicate-qt-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airin-qt-selfsigned.crt -key airin-qt-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicate-qt.exe -out syndicate-qt-signed.exe
+        -in airin-qt.exe -out airin-qt-signed.exe
 
-osslsigncode sign -certs syndicated-selfsigned.crt -key syndicated-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airind-selfsigned.crt -key airind-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicated.exe -out syndicated-signed.exe
+        -in airind.exe -out airind-signed.exe
 
-osslsigncode sign -certs syndicate-tx-selfsigned.crt -key syndicate-tx-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airin-tx-selfsigned.crt -key airin-tx-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicate-tx.exe -out syndicate-tx-signed.exe
+        -in airin-tx.exe -out airin-tx-signed.exe
 
-osslsigncode sign -certs syndicate-cli-selfsigned.crt -key syndicate-cli-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airin-cli-selfsigned.crt -key airin-cli-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicate-cli.exe -out syndicate-cli-signed.exe
+        -in airin-cli.exe -out airin-cli-signed.exe
 
-mv syndicate-qt-signed.exe syndicate-qt.exe;
-mv syndicated-signed.exe syndicated.exe;
-mv syndicate-tx-signed.exe syndicate-tx.exe;
-mv syndicate-cli-signed.exe syndicate-cli.exe;
+mv airin-qt-signed.exe airin-qt.exe;
+mv airind-signed.exe airind.exe;
+mv airin-tx-signed.exe airin-tx.exe;
+mv airin-cli-signed.exe airin-cli.exe;
 
 cd ../../..;
 make clean;cd src;make clean;cd ..;
@@ -82,14 +82,14 @@ make clean;cd src;make clean;cd ..;
 make HOST=i686-w64-mingw32 -j4 -k;
 
 mkdir -p build/v2.0.0.0/i686-w64-mingw32;
-cp ./src/syndicated.exe ./build/v2.0.0.0/i686-w64-mingw32/syndicated.exe;
-cp ./src/syndicate-tx.exe ./build/v2.0.0.0/i686-w64-mingw32/syndicate-tx.exe;
-cp ./src/syndicate-cli.exe ./build/v2.0.0.0/i686-w64-mingw32/syndicate-cli.exe;
-cp ./src/qt/syndicate-qt.exe ./build/v2.0.0.0/i686-w64-mingw32/syndicate-qt.exe;
-strip ./build/v2.0.0.0/i686-w64-mingw32/syndicated.exe
-strip ./build/v2.0.0.0/i686-w64-mingw32/syndicate-tx.exe
-strip ./build/v2.0.0.0/i686-w64-mingw32/syndicate-cli.exe
-strip ./build/v2.0.0.0/i686-w64-mingw32/syndicate-qt.exe
+cp ./src/airind.exe ./build/v2.0.0.0/i686-w64-mingw32/airind.exe;
+cp ./src/airin-tx.exe ./build/v2.0.0.0/i686-w64-mingw32/airin-tx.exe;
+cp ./src/airin-cli.exe ./build/v2.0.0.0/i686-w64-mingw32/airin-cli.exe;
+cp ./src/qt/airin-qt.exe ./build/v2.0.0.0/i686-w64-mingw32/airin-qt.exe;
+strip ./build/v2.0.0.0/i686-w64-mingw32/airind.exe
+strip ./build/v2.0.0.0/i686-w64-mingw32/airin-tx.exe
+strip ./build/v2.0.0.0/i686-w64-mingw32/airin-cli.exe
+strip ./build/v2.0.0.0/i686-w64-mingw32/airin-qt.exe
 ## created detached signatures
 cd build/v2.0.0.0/i686-w64-mingw32;
 
@@ -100,35 +100,35 @@ cd build/v2.0.0.0/i686-w64-mingw32;
 ##/OU= 	Organizational Unit 	IT Department
 ##/CN= 	Common Name 	example.com
 
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicate-qt-selfsigned.key -out ./syndicate-qt-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net";
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicated-selfsigned.key -out ./syndicated-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net";
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicate-tx-selfsigned.key -out ./syndicate-tx-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net"; 
-openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./syndicate-cli-selfsigned.key -out ./syndicate-cli-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=syndicateltd.net"; 
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airin-qt-selfsigned.key -out ./airin-qt-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net";
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airind-selfsigned.key -out ./airind-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net";
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airin-tx-selfsigned.key -out ./airin-tx-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net"; 
+openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout ./airin-cli-selfsigned.key -out ./airin-cli-selfsigned.crt -subj "/C=AT/ST=Vienna/L=Vienna/O=Development/OU=Core Development/CN=airinltd.net"; 
 
-osslsigncode sign -certs syndicate-qt-selfsigned.crt -key syndicate-qt-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airin-qt-selfsigned.crt -key airin-qt-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicate-qt.exe -out syndicate-qt-signed.exe
+        -in airin-qt.exe -out airin-qt-signed.exe
 
-osslsigncode sign -certs syndicated-selfsigned.crt -key syndicated-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airind-selfsigned.crt -key airind-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicated.exe -out syndicated-signed.exe
+        -in airind.exe -out airind-signed.exe
 
-osslsigncode sign -certs syndicate-tx-selfsigned.crt -key syndicate-tx-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airin-tx-selfsigned.crt -key airin-tx-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicate-tx.exe -out syndicate-tx-signed.exe
+        -in airin-tx.exe -out airin-tx-signed.exe
 
-osslsigncode sign -certs syndicate-cli-selfsigned.crt -key syndicate-cli-selfsigned.key \
-        -n "Syndicate Ltd" -i http://www.syndicateltd.net/ \
+osslsigncode sign -certs airin-cli-selfsigned.crt -key airin-cli-selfsigned.key \
+        -n "Airin Ltd" -i http://www.airinltd.net/ \
         -t http://timestamp.verisign.com/scripts/timstamp.dll \
-        -in syndicate-cli.exe -out syndicate-cli-signed.exe
+        -in airin-cli.exe -out airin-cli-signed.exe
 
-mv syndicate-qt-signed.exe syndicate-qt.exe;
-mv syndicated-signed.exe syndicated.exe;
-mv syndicate-tx-signed.exe syndicate-tx.exe;
-mv syndicate-cli-signed.exe syndicate-cli.exe;
+mv airin-qt-signed.exe airin-qt.exe;
+mv airind-signed.exe airind.exe;
+mv airin-tx-signed.exe airin-tx.exe;
+mv airin-cli-signed.exe airin-cli.exe;
 
 cd ../../..;
 make clean;cd src;make clean;cd ..;
@@ -139,14 +139,14 @@ make clean;cd src;make clean;cd ..;
 make HOST=arm-linux-gnueabihf -j4 -k;
 
 mkdir -p build/v2.0.0.0/arm-linux-gnueabihf;
-cp ./src/syndicated ./build/v2.0.0.0/arm-linux-gnueabihf/syndicated;
-cp ./src/syndicate-tx ./build/v2.0.0.0/arm-linux-gnueabihf/syndicate-tx;
-cp ./src/syndicate-cli ./build/v2.0.0.0/arm-linux-gnueabihf/syndicate-cli;
-cp ./src/qt/syndicate-qt ./build/v2.0.0.0/arm-linux-gnueabihf/syndicate-qt;
-strip ./build/v2.0.0.0/arm-linux-gnueabihf/syndicated
-strip ./build/v2.0.0.0/arm-linux-gnueabihf/syndicate-tx
-strip ./build/v2.0.0.0/arm-linux-gnueabihf/syndicate-cli
-strip ./build/v2.0.0.0/arm-linux-gnueabihf/syndicate-qt
+cp ./src/airind ./build/v2.0.0.0/arm-linux-gnueabihf/airind;
+cp ./src/airin-tx ./build/v2.0.0.0/arm-linux-gnueabihf/airin-tx;
+cp ./src/airin-cli ./build/v2.0.0.0/arm-linux-gnueabihf/airin-cli;
+cp ./src/qt/airin-qt ./build/v2.0.0.0/arm-linux-gnueabihf/airin-qt;
+strip ./build/v2.0.0.0/arm-linux-gnueabihf/airind
+strip ./build/v2.0.0.0/arm-linux-gnueabihf/airin-tx
+strip ./build/v2.0.0.0/arm-linux-gnueabihf/airin-cli
+strip ./build/v2.0.0.0/arm-linux-gnueabihf/airin-qt
 # created detached signatures
 cd build/v2.0.0.0/arm-linux-gnueabihf;
 cd ../../..;
@@ -158,14 +158,14 @@ make clean;cd src;make clean;cd ..;
 make HOST=aarch64-linux-gnu -j4 -k;
 
 mkdir -p build/v2.0.0.0/aarch64-linux-gnu;
-cp ./src/syndicated ./build/v2.0.0.0/aarch64-linux-gnu/syndicated;
-cp ./src/syndicate-tx ./build/v2.0.0.0/aarch64-linux-gnu/syndicate-tx;
-cp ./src/syndicate-cli ./build/v2.0.0.0/aarch64-linux-gnu/syndicate-cli;
-cp ./src/qt/syndicate-qt ./build/v2.0.0.0/aarch64-linux-gnu/syndicate-qt;
-strip ./build/v2.0.0.0/aarch64-linux-gnu/syndicated
-strip ./build/v2.0.0.0/aarch64-linux-gnu/syndicate-tx
-strip ./build/v2.0.0.0/aarch64-linux-gnu/syndicate-cli
-strip ./build/v2.0.0.0/aarch64-linux-gnu/syndicate-qt
+cp ./src/airind ./build/v2.0.0.0/aarch64-linux-gnu/airind;
+cp ./src/airin-tx ./build/v2.0.0.0/aarch64-linux-gnu/airin-tx;
+cp ./src/airin-cli ./build/v2.0.0.0/aarch64-linux-gnu/airin-cli;
+cp ./src/qt/airin-qt ./build/v2.0.0.0/aarch64-linux-gnu/airin-qt;
+strip ./build/v2.0.0.0/aarch64-linux-gnu/airind
+strip ./build/v2.0.0.0/aarch64-linux-gnu/airin-tx
+strip ./build/v2.0.0.0/aarch64-linux-gnu/airin-cli
+strip ./build/v2.0.0.0/aarch64-linux-gnu/airin-qt
 # created detached signatures
 cd build/v2.0.0.0/aarch64-linux-gnu;
 cd ../../..;

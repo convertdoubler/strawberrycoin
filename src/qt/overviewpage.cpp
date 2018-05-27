@@ -35,7 +35,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SYNX)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::AIRIN)
     {
     }
 
@@ -164,7 +164,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sSYNXPercentage, QString& szSYNXPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sAIRINPercentage, QString& szAIRINPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -183,8 +183,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
     
-    szSYNXPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sSYNXPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szAIRINPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sAIRINPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
     
 }
 
@@ -208,13 +208,13 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nLockedBalance = pwalletMain->GetLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
-    // SYNX Balance
+    // AIRIN Balance
     CAmount nTotalBalance = balance + unconfirmedBalance + nLockedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance - nLockedBalance;      // increment nLockedBalance twice because it was added to
                                                                                      // nTotalBalance above
-    // zSYNX Balance
+    // zAIRIN Balance
     CAmount matureZerocoinBalance = zerocoinBalance - immatureZerocoinBalance;
     // Percentages
     QString szPercentage = "";
@@ -224,7 +224,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = pivAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // SYNX labels
+    // AIRIN labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, pivAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -238,7 +238,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zSYNX labels
+    // zAIRIN labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -249,19 +249,19 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelSYNXPercent->setText(sPercentage);
-    ui->labelzSYNXPercent->setText(szPercentage);
+    ui->labelAIRINPercent->setText(sPercentage);
+    ui->labelzAIRINPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zSYNX.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zAIRIN.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", false);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in syndicate.conf.");
+        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in airin.conf.");
     }
     else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in syndicate.conf");
+        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in airin.conf");
     }
 
     // Only show most balances if they are non-zero for the sake of simplicity
@@ -270,39 +270,39 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
     ui->labelBalanceTextz->setVisible(showSumAvailable);
     ui->labelBalancez->setVisible(showSumAvailable);
-    bool showSYNXAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
-    bool showWatchOnlySYNXAvailable = watchOnlyBalance != nTotalWatchBalance;
-    bool showSYNXPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlySYNXPending = watchUnconfBalance != 0;
-    bool showSYNXLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlySYNXLocked = nWatchOnlyLockedBalance != 0;
+    bool showAIRINAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
+    bool showWatchOnlyAIRINAvailable = watchOnlyBalance != nTotalWatchBalance;
+    bool showAIRINPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyAIRINPending = watchUnconfBalance != 0;
+    bool showAIRINLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyAIRINLocked = nWatchOnlyLockedBalance != 0;
     bool showImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = watchImmatureBalance != 0;
     bool showWatchOnly = nTotalWatchBalance != 0;
-    ui->labelBalance->setVisible(showSYNXAvailable || showWatchOnlySYNXAvailable);
-    ui->labelBalanceText->setVisible(showSYNXAvailable || showWatchOnlySYNXAvailable);
-    ui->labelWatchAvailable->setVisible(showSYNXAvailable && showWatchOnly);
-    ui->labelUnconfirmed->setVisible(showSYNXPending || showWatchOnlySYNXPending);
-    ui->labelPendingText->setVisible(showSYNXPending || showWatchOnlySYNXPending);
-    ui->labelWatchPending->setVisible(showSYNXPending && showWatchOnly);
-    ui->labelLockedBalance->setVisible(showSYNXLocked || showWatchOnlySYNXLocked);
-    ui->labelLockedBalanceText->setVisible(showSYNXLocked || showWatchOnlySYNXLocked);
-    ui->labelWatchLocked->setVisible(showSYNXLocked && showWatchOnly);
+    ui->labelBalance->setVisible(showAIRINAvailable || showWatchOnlyAIRINAvailable);
+    ui->labelBalanceText->setVisible(showAIRINAvailable || showWatchOnlyAIRINAvailable);
+    ui->labelWatchAvailable->setVisible(showAIRINAvailable && showWatchOnly);
+    ui->labelUnconfirmed->setVisible(showAIRINPending || showWatchOnlyAIRINPending);
+    ui->labelPendingText->setVisible(showAIRINPending || showWatchOnlyAIRINPending);
+    ui->labelWatchPending->setVisible(showAIRINPending && showWatchOnly);
+    ui->labelLockedBalance->setVisible(showAIRINLocked || showWatchOnlyAIRINLocked);
+    ui->labelLockedBalanceText->setVisible(showAIRINLocked || showWatchOnlyAIRINLocked);
+    ui->labelWatchLocked->setVisible(showAIRINLocked && showWatchOnly);
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
-    bool showzSYNXAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzSYNXUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzSYNXImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzSYNXAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzSYNXAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzSYNXUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzSYNXUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzSYNXImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzSYNXImmature);
+    bool showzAIRINAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzAIRINUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzAIRINImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzAIRINAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzAIRINAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzAIRINUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzAIRINUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzAIRINImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzAIRINImmature);
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelSYNXPercent->setVisible(showPercentages);
-    ui->labelzSYNXPercent->setVisible(showPercentages);
+    ui->labelAIRINPercent->setVisible(showPercentages);
+    ui->labelzAIRINPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("SYNX")
+    // update the display unit, to not use the default ("AIRIN")
     updateDisplayUnit();
 }
 

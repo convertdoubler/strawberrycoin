@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your SYNDICATE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw SYNDICATEadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your AIRIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw AIRINadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your SYNDICATE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw SYNDICATEadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your AIRIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw AIRINadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>SYNDICATE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SYNXs from being stolen by malware infecting your computer.</source>
-        <translation>SYNDICATE zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw SYNXs stelen.</translation>
+        <source>AIRIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AIRINs from being stolen by malware infecting your computer.</source>
+        <translation>AIRIN zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw AIRINs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SYNX&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW SYNX VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AIRIN&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW AIRIN VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a Syndicate Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een SYNDICATE adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <source>Enter a Airin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een AIRIN adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to sign the message with</source>
-        <translation>Het SYNDICATE adres om het bericht met te ondertekenen</translation>
+        <source>The AIRIN address to sign the message with</source>
+        <translation>Het AIRIN adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het SYNDICATE adres bezit</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het AIRIN adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The SYNDICATE address the message was signed with</source>
-        <translation>Het SYNDICATE adres waarmee het bericht was ondertekend</translation>
+        <source>The AIRIN address the message was signed with</source>
+        <translation>Het AIRIN adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SYNDICATE address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde SYNDICATE adres</translation>
+        <source>Verify the message to ensure it was signed with the specified AIRIN address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde AIRIN adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Kern</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Kern</translation>
     </message>
     <message>
-        <source>Send coins to a SYNDICATE address</source>
-        <translation>Verstuur munten naar een SYNDICATE adres</translation>
+        <source>Send coins to a AIRIN address</source>
+        <translation>Verstuur munten naar een AIRIN adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and syndicate: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en SYNDICATE: URI's)</translation>
+        <source>Request payments (generates QR codes and airin: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en AIRIN: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +614,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About SYNDICATE Core</source>
-        <translation>&amp;Over SYNDICATE Kern</translation>
+        <source>&amp;About AIRIN Core</source>
+        <translation>&amp;Over AIRIN Kern</translation>
     </message>
     <message>
-        <source>Show information about SYNDICATE Core</source>
-        <translation>Toon informatie over SYNDICATE Kern</translation>
+        <source>Show information about AIRIN Core</source>
+        <translation>Toon informatie over AIRIN Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for SYNDICATE</source>
-        <translation>Wijzig SYNDICATE configuratie opties</translation>
+        <source>Modify configuration options for AIRIN</source>
+        <translation>Wijzig AIRIN configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your SYNDICATE addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw SYNDICATE adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your AIRIN addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw AIRIN adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified SYNDICATE addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde SYNDICATE adressen</translation>
+        <source>Verify messages to ensure they were signed with specified AIRIN addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde AIRIN adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +662,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a SYNDICATE: URI or payment request</source>
-        <translation>Open een SYNDICATE: URI of betaalverzoek</translation>
+        <source>Open a AIRIN: URI or payment request</source>
+        <translation>Open een AIRIN: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,12 +674,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>SYNDICATE Core client</source>
-        <translation>SYNDICATE Core client</translation>
+        <source>AIRIN Core client</source>
+        <translation>AIRIN Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to SYNDICATE network</source>
-        <translation><numerusform>%n actieve verbinding(en) naar het SYNDICATE netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het SYNDICATE netwerk</numerusform></translation>
+        <source>%n active connection(s) to AIRIN network</source>
+        <translation><numerusform>%n actieve verbinding(en) naar het AIRIN netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het AIRIN netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -825,8 +825,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (syndicate.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (syndicate.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (airin.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (airin.conf).</translation>
     </message>
 </context>
 <context>
@@ -1042,8 +1042,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid SYNDICATE address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig SYNDICATE adres.</translation>
+        <source>The entered address "%1" is not a valid AIRIN address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig AIRIN adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1072,16 +1072,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Kern</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About SYNDICATE Core</source>
-        <translation>Over SYNDICATE Core</translation>
+        <source>About AIRIN Core</source>
+        <translation>Over AIRIN Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1111,16 +1111,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to SYNDICATE Core.</source>
-        <translation>Welkom bij SYNDICATE Core</translation>
+        <source>Welcome to AIRIN Core.</source>
+        <translation>Welkom bij AIRIN Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Kern</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1336,20 +1336,20 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start SYNDICATE after logging in to the system.</source>
-        <translation>SYNDICATE automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start AIRIN after logging in to the system.</source>
+        <translation>AIRIN automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start SYNDICATE on system login</source>
-        <translation>&amp;SYNDICATE starten bij systeemlogin</translation>
+        <source>&amp;Start AIRIN on system login</source>
+        <translation>&amp;AIRIN starten bij systeemlogin</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting SYNDICATE.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van SYNDICATE.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting AIRIN.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van AIRIN.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1508,8 +1508,8 @@ MultiSend: %1</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zSYNX</source>
-        <translation>zSYNX</translation>
+        <source>zAIRIN</source>
+        <translation>zAIRIN</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1619,8 +1619,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a SYNDICATE address (e.g. %1)</source>
-        <translation>Voer een SYNDICATE adres in (b.v. %1)</translation>
+        <source>Enter a AIRIN address (e.g. %1)</source>
+        <translation>Voer een AIRIN adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1821,8 +1821,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the SYNDICATE RPC console.</source>
-        <translation>Welkom bij de SYNDICATE RPC console.</translation>
+        <source>Welcome to the AIRIN RPC console.</source>
+        <translation>Welkom bij de AIRIN RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2029,8 +2029,8 @@ MultiSend: %1</translation>
         <translation>Wijzig:</translation>
     </message>
     <message>
-        <source>0 SYNX</source>
-        <translation>0 SYNX</translation>
+        <source>0 AIRIN</source>
+        <translation>0 AIRIN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2121,8 +2121,8 @@ MultiSend: %1</translation>
         <translation>anonieme financiën</translation>
     </message>
     <message>
-        <source>Warning: Invalid SYNDICATE address</source>
-        <translation>Waarschuwing: Ongeldig SYNDICATE adres</translation>
+        <source>Warning: Invalid AIRIN address</source>
+        <translation>Waarschuwing: Ongeldig AIRIN adres</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2176,8 +2176,8 @@ MultiSend: %1</translation>
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to send the payment to</source>
-        <translation>Het SYNDICATE adres om de betaling naar te verzenden</translation>
+        <source>The AIRIN address to send the payment to</source>
+        <translation>Het AIRIN adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2231,8 +2231,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>SYNDICATE Core is shutting down...</source>
-        <translation>SYNDICATE Core is aan het afsluiten...</translation>
+        <source>AIRIN Core is shutting down...</source>
+        <translation>AIRIN Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2250,8 +2250,8 @@ MultiSend: %1</translation>
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to sign the message with</source>
-        <translation>Het SYNDICATE adres om het bericht met te ondertekenen</translation>
+        <source>The AIRIN address to sign the message with</source>
+        <translation>Het AIRIN adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2282,16 +2282,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het SYNDICATE adres bezit</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het AIRIN adres bezit</translation>
     </message>
     <message>
-        <source>The SYNDICATE address the message was signed with</source>
-        <translation>Het SYNDICATE adres waarmee het bericht was ondertekend</translation>
+        <source>The AIRIN address the message was signed with</source>
+        <translation>Het AIRIN adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SYNDICATE address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde SYNDICATE adres</translation>
+        <source>Verify the message to ensure it was signed with the specified AIRIN address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde AIRIN adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2361,8 +2361,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Kern</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2377,8 +2377,8 @@ MultiSend: %1</translation>
         <translation>De PIVX Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The SYNDICATE Core developers</source>
-        <translation>De SYNDICATE Core ontwikkelaars</translation>
+        <source>The AIRIN Core developers</source>
+        <translation>De AIRIN Core ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2764,7 +2764,7 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>syndicate-core</name>
+    <name>airin-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(standaard: %s)</translation>
@@ -2802,8 +2802,8 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2014-%i The PIVX Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The SYNDICATE Core Developers</source>
-        <translation>Copyright (C) 2015-%i The SYNDICATE Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The AIRIN Core Developers</source>
+        <translation>Copyright (C) 2015-%i The AIRIN Core Ontwikkelaars</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>

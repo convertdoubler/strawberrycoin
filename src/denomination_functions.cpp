@@ -3,11 +3,11 @@
  *
  * @brief      Denomination functions for the Zerocoin library.
  *
- * @copyright  Copyright 2017 SYNDICATE Developers
+ * @copyright  Copyright 2017 AIRIN Developers
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Syndicate developers
+// Copyright (c) 2018 The Airin developers
 
 #include "denomination_functions.h"
 

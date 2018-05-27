@@ -49,7 +49,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "SYNDICATE cannot be compiled without assertions."
+#error "AIRIN cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -1618,7 +1618,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                     continue;
                 CoinSpend spend = TxInToZerocoinSpend(txIn);
                 if (!ContextualCheckCoinSpend(spend, chainActive.Tip(), txid))
-                    return state.Invalid(error("%s: zSYNX spend in tx %s failed to pass context checks", __func__, txid.GetHex()));
+                    return state.Invalid(error("%s: zAIRIN spend in tx %s failed to pass context checks", __func__, txid.GetHex()));
             }
         } else {
             LOCK(pool.cs);
@@ -2124,7 +2124,7 @@ int64_t GetBlockValue(int nHeight)
         // Genesis block
         nSubsidy = 0 * COIN;
     } else if (nHeight == 1) {
-        // PREMINE: Current available SYNX 30.000.000
+        // PREMINE: Current available AIRIN 30.000.000
         return 30000001 * COIN;
     } else if (nHeight > 1) {
         // PoW/PoS - Phase lasts until - undefined)
@@ -2888,7 +2888,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from SYNDICATE
+         * note we only undo zerocoin databasing in the following statement, value to and from AIRIN
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -3021,11 +3021,11 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("syndicate-scriptch");
+    RenameThread("airin-scriptch");
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZSYNXMinted()
+void RecalculateZAIRINMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -3052,14 +3052,14 @@ void RecalculateZSYNXMinted()
     }
 }
 
-void RecalculateZSYNXSpent()
+void RecalculateZAIRINSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     while (true) {
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
 
-        //Rewrite zSYNX supply
+        //Rewrite zAIRIN supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -3068,13 +3068,13 @@ void RecalculateZSYNXSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zSYNX supply
+        //Add mints to zAIRIN supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zSYNX supply
+        //Remove spends from zAIRIN supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -3088,7 +3088,7 @@ void RecalculateZSYNXSpent()
     }
 }
 
-bool RecalculateSYNXSupply(int nHeightStart)
+bool RecalculateAIRINSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -3161,7 +3161,7 @@ bool RecalculateSYNXSupply(int nHeightStart)
 
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError)
 {
-    // SYNDICATE: recalculate Accumulator Checkpoints that failed to database properly
+    // AIRIN: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty() && chainActive.Height() >= Params().Zerocoin_StartHeight()) {
         //uiInterface.InitMessage(_("Calculating missing accumulators..."));
         LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -3214,7 +3214,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZSYNXSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZAIRINSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -3414,14 +3414,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZSYNXMinted();
-        RecalculateZSYNXSpent();
-        RecalculateSYNXSupply(Params().Zerocoin_StartHeight());
+        RecalculateZAIRINMinted();
+        RecalculateZAIRINSpent();
+        RecalculateAIRINSupply(Params().Zerocoin_StartHeight());
     }
 
-    //Track zSYNX money supply in the block index
-    if (!UpdateZSYNXSupply(block, pindex))
-        return state.DoS(100, error("%s: Failed to calculate new zSYNX supply for block=%s height=%d", __func__,
+    //Track zAIRIN money supply in the block index
+    if (!UpdateZAIRINSupply(block, pindex))
+        return state.DoS(100, error("%s: Failed to calculate new zAIRIN supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3482,7 +3482,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zSYNX serials
+    //Record zAIRIN serials
     for (pair<CoinSpend, uint256> pSpend : vSpends) {
         //record spend to database
         if (!zerocoinDB->WriteCoinSpend(pSpend.first.getCoinSerialNumber(), pSpend.second))
@@ -3601,7 +3601,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert SYNX to zSYNX
+    // If turned on AutoZeromint will automatically convert AIRIN to zAIRIN
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 
@@ -4440,7 +4440,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // SYNDICATE
+        // AIRIN
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -5865,7 +5865,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             Misbehaving(pfrom->GetId(), 1);
             return false;
         }
-        // SYNDICATE: We use certain sporks during IBD, so check to see if they are
+        // AIRIN: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
                 !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&

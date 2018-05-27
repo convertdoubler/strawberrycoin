@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Syndicate developers
+// Copyright (c) 2018 The Airin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -46,7 +46,7 @@ bool fSendFreeTransactions = false;
 bool fPayAtLeastCustomFee = true;
 
 /**
- * Fees smaller than this (in usynx) are considered zero fee (for transaction creation)
+ * Fees smaller than this (in uairin) are considered zero fee (for transaction creation)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minTxFee 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  * Override with -mintxfee
@@ -2247,13 +2247,13 @@ bool CWallet::SelectCoins(const CAmount& nTargetValue, set<pair<const CWalletTx*
         return (nValueRet >= nTargetValue);
     }
 
-    //if we're doing only denominated, we need to round up to the nearest .1 SYNX
+    //if we're doing only denominated, we need to round up to the nearest .1 AIRIN
     if (coin_type == ONLY_DENOMINATED) {
         // Make outputs by looping through denominations, from large to small
         BOOST_FOREACH (CAmount v, obfuScationDenominations) {
             BOOST_FOREACH (const COutput& out, vCoins) {
                 if (out.tx->vout[out.i].nValue == v                                               //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 SYNX over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 AIRIN over
                     ) {
                     CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
                     int rounds = GetInputObfuscationRounds(vin);
@@ -2315,12 +2315,12 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
             // Function returns as follows:
             //
-            // bit 0 - 10000 SYNX+1 ( bit on if present )
-            // bit 1 - 1000 SYNX+1
-            // bit 2 - 100 SYNX+1
-            // bit 3 - 10 SYNX+1
-            // bit 4 - 1 SYNX+1
-            // bit 5 - .1 SYNX+1
+            // bit 0 - 10000 AIRIN+1 ( bit on if present )
+            // bit 1 - 1000 AIRIN+1
+            // bit 2 - 100 AIRIN+1
+            // bit 3 - 10 AIRIN+1
+            // bit 4 - 1 AIRIN+1
+            // bit 5 - .1 AIRIN+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
 
@@ -2679,9 +2679,9 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
                     } else if (coin_type == ONLY_NOT10000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 5000 SYNX.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 5000 AIRIN.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOT10000IFMN) {
-                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SYNX.");
+                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 AIRIN.");
                     } else {
                         strFailReason = _("Unable to locate enough Obfuscation denominated funds for this transaction.");
                         strFailReason += " " + _("Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -2719,7 +2719,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-syndicate-address
+                    // change transaction isn't always pay-to-airin-address
                     CScript scriptChange;
                     bool combineChange = false;
 
@@ -3927,32 +3927,32 @@ void CWallet::AutoZeromint()
     CAmount nMintAmount = 0;
     CAmount nToMintAmount = 0;
 
-    // zSYNX are integers > 0, so we can't mint 10% of 9 SYNX
+    // zAIRIN are integers > 0, so we can't mint 10% of 9 AIRIN
     if (nBalance < 10){
-        LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting zSYNX\n", nBalance);
+        LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting zAIRIN\n", nBalance);
         return;
     }
 
-    // Percentage of zSYNX we already have
+    // Percentage of zAIRIN we already have
     double dPercentage = 100 * (double)nZerocoinBalance / (double)(nZerocoinBalance + nBalance);
 
     // Check if minting is actually needed
     if(dPercentage >= nZeromintPercentage){
-        LogPrint("zero", "CWallet::AutoZeromint() @block %ld: percentage of existing zSYNX (%lf%%) already >= configured percentage (%d%%). No minting needed...\n",
+        LogPrint("zero", "CWallet::AutoZeromint() @block %ld: percentage of existing zAIRIN (%lf%%) already >= configured percentage (%d%%). No minting needed...\n",
                   chainActive.Tip()->nHeight, dPercentage, nZeromintPercentage);
         return;
     }
 
-    // zSYNX amount needed for the target percentage
+    // zAIRIN amount needed for the target percentage
     nToMintAmount = ((nZerocoinBalance + nBalance) * nZeromintPercentage / 100);
 
-    // zSYNX amount missing from target (must be minted)
+    // zAIRIN amount missing from target (must be minted)
     nToMintAmount = (nToMintAmount - nZerocoinBalance) / COIN;
 
-    // Use the biggest denomination smaller than the needed zSYNX We'll only mint exact denomination to make minting faster.
+    // Use the biggest denomination smaller than the needed zAIRIN We'll only mint exact denomination to make minting faster.
     // Exception: for big amounts use 6666 (6666 = 1*5000 + 1*1000 + 1*500 + 1*100 + 1*50 + 1*10 + 1*5 + 1) to create all
     // possible denominations to avoid having 5000 denominations only.
-    // If a preferred denomination is used (means nPreferredDenom != 0) do nothing until we have enough SYNX to mint this denomination
+    // If a preferred denomination is used (means nPreferredDenom != 0) do nothing until we have enough AIRIN to mint this denomination
 
     if (nPreferredDenom > 0){
         if (nToMintAmount >= nPreferredDenom)
@@ -3996,7 +3996,7 @@ void CWallet::AutoZeromint()
         nZerocoinBalance = GetZerocoinBalance(false);
         nBalance = GetUnlockedCoins();
         dPercentage = 100 * (double)nZerocoinBalance / (double)(nZerocoinBalance + nBalance);
-        LogPrintf("CWallet::AutoZeromint() @ block %ld: successfully minted %ld zSYNX. Current percentage of zSYNX: %lf%%\n",
+        LogPrintf("CWallet::AutoZeromint() @ block %ld: successfully minted %ld zAIRIN. Current percentage of zAIRIN: %lf%%\n",
                   chainActive.Tip()->nHeight, nMintAmount, dPercentage);
         // Re-adjust startup time to delay next Automint for 5 minutes
         nStartupTime = GetAdjustedTime();
@@ -4454,7 +4454,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are syndicate outputs - NOTE that zSynx outputs are signed later in SoK
+    // Sign if these are airin outputs - NOTE that zSynx outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
@@ -4471,14 +4471,14 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
 bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, const uint256& hashTxOut, CTxIn& newTxIn, CZerocoinSpendReceipt& receipt)
 {
     // Default error status if not changed below
-    receipt.SetStatus(_("Transaction Mint Started"), ZSYNX_TXMINT_GENERAL);
+    receipt.SetStatus(_("Transaction Mint Started"), ZAIRIN_TXMINT_GENERAL);
 
     libzerocoin::CoinDenomination denomination = zerocoinSelected.GetDenomination();
     // 2. Get pubcoin from the private coin
     libzerocoin::PublicCoin pubCoinSelected(Params().Zerocoin_Params(), zerocoinSelected.GetValue(), denomination);
     LogPrintf("%s : pubCoinSelected:\n denom=%d\n value%s\n", __func__, denomination, pubCoinSelected.getValue().GetHex());
     if (!pubCoinSelected.validate()) {
-        receipt.SetStatus(_("The selected mint coin is an invalid coin"), ZSYNX_INVALID_COIN);
+        receipt.SetStatus(_("The selected mint coin is an invalid coin"), ZAIRIN_INVALID_COIN);
         return false;
     }
 
@@ -4488,7 +4488,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
     string strFailReason = "";
     int nMintsAdded = 0;
     if (!GenerateAccumulatorWitness(pubCoinSelected, accumulator, witness, nSecurityLevel, nMintsAdded, strFailReason)) {
-        receipt.SetStatus(_("Try to spend with a higher security level to include more coins"), ZSYNX_FAILED_ACCUMULATOR_INITIALIZATION);
+        receipt.SetStatus(_("Try to spend with a higher security level to include more coins"), ZAIRIN_FAILED_ACCUMULATOR_INITIALIZATION);
         LogPrintf("%s : %s \n", __func__, receipt.GetStatusMessage());
         return false;
     }
@@ -4504,7 +4504,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
         libzerocoin::CoinSpend spend(Params().Zerocoin_Params(), privateCoin, accumulator, nChecksum, witness, hashTxOut);
 
         if (!spend.Verify(accumulator)) {
-            receipt.SetStatus(_("The new spend coin transaction did not verify"), ZSYNX_INVALID_WITNESS);
+            receipt.SetStatus(_("The new spend coin transaction did not verify"), ZAIRIN_INVALID_WITNESS);
             return false;
         }
 
@@ -4528,13 +4528,13 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
             serializedCoinSpendChecking << spend;
         }
         catch (...) {
-            receipt.SetStatus(_("Failed to deserialize"), ZSYNX_BAD_SERIALIZATION);
+            receipt.SetStatus(_("Failed to deserialize"), ZAIRIN_BAD_SERIALIZATION);
             return false;
         }
 
         libzerocoin::CoinSpend newSpendChecking(Params().Zerocoin_Params(), serializedCoinSpendChecking);
         if (!newSpendChecking.Verify(accumulator)) {
-            receipt.SetStatus(_("The transaction did not verify"), ZSYNX_BAD_SERIALIZATION);
+            receipt.SetStatus(_("The transaction did not verify"), ZAIRIN_BAD_SERIALIZATION);
             return false;
         }
 
@@ -4547,7 +4547,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
                     LogPrintf("%s failed to write zerocoinmint\n", __func__);
 
                 pwalletMain->NotifyZerocoinChanged(pwalletMain, zerocoinSelected.GetValue().GetHex(), "Used", CT_UPDATED);
-                receipt.SetStatus(_("The coin spend has been used"), ZSYNX_SPENT_USED_ZSYNX);
+                receipt.SetStatus(_("The coin spend has been used"), ZAIRIN_SPENT_USED_ZAIRIN);
                 return false;
             }
         }
@@ -4558,11 +4558,11 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
         receipt.AddSpend(zcSpend);
     }
     catch (const std::exception&) {
-        receipt.SetStatus(_("CoinSpend: Accumulator witness does not verify"), ZSYNX_INVALID_WITNESS);
+        receipt.SetStatus(_("CoinSpend: Accumulator witness does not verify"), ZAIRIN_INVALID_WITNESS);
         return false;
     }
 
-    receipt.SetStatus(_("Spend Valid"), ZSYNX_SPEND_OKAY); // Everything okay
+    receipt.SetStatus(_("Spend Valid"), ZAIRIN_SPEND_OKAY); // Everything okay
 
     return true;
 }
@@ -4570,7 +4570,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
 bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel, CWalletTx& wtxNew, CReserveKey& reserveKey, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vSelectedMints, vector<CZerocoinMint>& vNewMints, bool fMintChange,  bool fMinimizeChange, CBitcoinAddress* address)
 {
     // Check available funds
-    int nStatus = ZSYNX_TRX_FUNDS_PROBLEMS;
+    int nStatus = ZAIRIN_TRX_FUNDS_PROBLEMS;
     if (nValue > GetZerocoinBalance(true)) {
         receipt.SetStatus(_("You don't have enough Zerocoins in your wallet"), nStatus);
         return false;
@@ -4582,7 +4582,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
     }
 
     // Create transaction
-    nStatus = ZSYNX_TRX_CREATE;
+    nStatus = ZAIRIN_TRX_CREATE;
 
     // If not already given pre-selected mints, then select mints from the wallet
     CWalletDB walletdb(pwalletMain->strWalletFile);
@@ -4590,7 +4590,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
     CAmount nValueSelected = 0;
     int nCoinsReturned = 0; // Number of coins returned in change from function below (for debug)
     int nNeededSpends = 0;  // Number of spends which would be needed if selection failed
-    const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zSYNX transaction
+    const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zAIRIN transaction
     if (vSelectedMints.empty()) {
         listMints = walletdb.ListMintedCoins(true, true, true); // need to find mints to spend
         if(listMints.empty()) {
@@ -4666,7 +4666,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
     }
 
     // Create change if needed
-    nStatus = ZSYNX_TRX_CHANGE;
+    nStatus = ZAIRIN_TRX_CHANGE;
 
     CMutableTransaction txNew;
     wtxNew.BindWallet(this);
@@ -4716,7 +4716,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
                 }
             }
 
-            //add output to syndicate address to the transaction (the actual primary spend taking place)
+            //add output to airin address to the transaction (the actual primary spend taking place)
             CTxOut txOutZerocoinSpend(nValue, scriptZerocoinSpend);
             txNew.vout.push_back(txOutZerocoinSpend);
 
@@ -4735,7 +4735,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
             // Limit size
             unsigned int nBytes = ::GetSerializeSize(txNew, SER_NETWORK, PROTOCOL_VERSION);
             if (nBytes >= MAX_ZEROCOIN_TX_SIZE) {
-                receipt.SetStatus(_("In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins"), ZSYNX_TX_TOO_LARGE);
+                receipt.SetStatus(_("In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins"), ZAIRIN_TX_TOO_LARGE);
                 return false;
             }
 
@@ -4757,7 +4757,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
         }
     }
 
-    receipt.SetStatus(_("Transaction Created"), ZSYNX_SPEND_OKAY); // Everything okay
+    receipt.SetStatus(_("Transaction Created"), ZAIRIN_SPEND_OKAY); // Everything okay
 
     return true;
 }
@@ -4876,14 +4876,14 @@ void CWallet::ZSynxBackupWallet()
     string strNewBackupName;
 
     for (int i = 0; i < 10; i++) {
-        strNewBackupName = strprintf("wallet-autozsynxbackup-%d.dat", i);
+        strNewBackupName = strprintf("wallet-autozairinbackup-%d.dat", i);
         backupPath = backupDir / strNewBackupName;
 
         if (filesystem::exists(backupPath)) {
             //Keep up to 10 backups
             if (i <= 8) {
                 //If the next file backup exists and is newer, then iterate
-                filesystem::path nextBackupPath = backupDir / strprintf("wallet-autozsynxbackup-%d.dat", i + 1);
+                filesystem::path nextBackupPath = backupDir / strprintf("wallet-autozairinbackup-%d.dat", i + 1);
                 if (filesystem::exists(nextBackupPath)) {
                     time_t timeThis = filesystem::last_write_time(backupPath);
                     time_t timeNext = filesystem::last_write_time(nextBackupPath);
@@ -4898,7 +4898,7 @@ void CWallet::ZSynxBackupWallet()
                 continue;
             }
             //reset to 0 because name with 9 already used
-            strNewBackupName = strprintf("wallet-autozsynxbackup-%d.dat", 0);
+            strNewBackupName = strprintf("wallet-autozairinbackup-%d.dat", 0);
             backupPath = backupDir / strNewBackupName;
             break;
         }
@@ -4968,10 +4968,10 @@ string CWallet::MintZerocoin(CAmount nValue, CWalletTx& wtxNew, vector<CZerocoin
 bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxNew, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vMintsSelected, bool fMintChange, bool fMinimizeChange, CBitcoinAddress* addressTo)
 {
     // Default: assume something goes wrong. Depending on the problem this gets more specific below
-    int nStatus = ZSYNX_SPEND_ERROR;
+    int nStatus = ZAIRIN_SPEND_ERROR;
 
     if (IsLocked()) {
-        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZSYNX_WALLET_LOCKED);
+        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZAIRIN_WALLET_LOCKED);
         return false;
     }
 
@@ -4987,7 +4987,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
     CWalletDB walletdb(pwalletMain->strWalletFile);
     if (!CommitTransaction(wtxNew, reserveKey)) {
         LogPrintf("%s: failed to commit\n", __func__);
-        nStatus = ZSYNX_COMMIT_FAILED;
+        nStatus = ZAIRIN_COMMIT_FAILED;
 
         //reset all mints
         for (CZerocoinMint mint : vMintsSelected) {
@@ -4999,7 +4999,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
         //erase spends
         for (CZerocoinSpend spend : receipt.GetSpends()) {
             if (!walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial())) {
-                receipt.SetStatus("Error: It cannot delete coin serial number in wallet", ZSYNX_ERASE_SPENDS_FAILED);
+                receipt.SetStatus("Error: It cannot delete coin serial number in wallet", ZAIRIN_ERASE_SPENDS_FAILED);
             }
 
             //Remove from public zerocoinDB
@@ -5009,7 +5009,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
         // erase new mints
         for (auto& mint : vNewMints) {
             if (!walletdb.EraseZerocoinMint(mint)) {
-                receipt.SetStatus("Error: Unable to cannot delete zerocoin mint in wallet", ZSYNX_ERASE_NEW_MINTS_FAILED);
+                receipt.SetStatus("Error: Unable to cannot delete zerocoin mint in wallet", ZAIRIN_ERASE_NEW_MINTS_FAILED);
             }
         }
 
@@ -5042,7 +5042,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
         walletdb.WriteZerocoinMint(mint);
     }
 
-    receipt.SetStatus("Spend Successful", ZSYNX_SPEND_OKAY);  // When we reach this point spending zSYNX was successful
+    receipt.SetStatus("Spend Successful", ZAIRIN_SPEND_OKAY);  // When we reach this point spending zAIRIN was successful
 
     return true;
 }

@@ -1,10 +1,10 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2018 The Syndicate developers
+// Copyright (c) 2018 The Airin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SYNDICATE_CSPORKDB_H
-#define SYNDICATE_CSPORKDB_H
+#ifndef AIRIN_CSPORKDB_H
+#define AIRIN_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //SYNDICATE_CSPORKDB_H
+#endif //AIRIN_CSPORKDB_H

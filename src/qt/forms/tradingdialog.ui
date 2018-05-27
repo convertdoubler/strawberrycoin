@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="SYNXSupply">
+    <widget class="QLabel" name="AIRINSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="SYNXDemand">
+    <widget class="QLabel" name="AIRINDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuySYNX">
+    <widget class="QPushButton" name="BuyAIRIN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy SYNX</string>
+      <string>Buy AIRIN</string>
      </property>
      <property name="icon">
-      <iconset resource="../syndicate.qrc">
+      <iconset resource="../airin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>SYNX</string>
+      <string>AIRIN</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>SYNX</string>
+      <string>AIRIN</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputSYNX">
+    <widget class="QLineEdit" name="UnitsInputAIRIN">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellSYNXBTN">
+    <widget class="QPushButton" name="SellAIRINBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell SYNX</string>
+      <string>Sell AIRIN</string>
      </property>
      <property name="icon">
-      <iconset resource="../syndicate">
+      <iconset resource="../airin">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>SYNX Available:</string>
+         <string>AIRIN Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="SYNXAvailableLabel">
+       <widget class="QLabel" name="AIRINAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelSYNX">
+       <widget class="QLabel" name="labelAIRIN">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>SYNX</string>
+         <string>AIRIN</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="SYNXBalanceLabel">
+    <widget class="QLabel" name="AIRINBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>SYNX Balance:</string>
+      <string>AIRIN Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="SYNXAvailableLabel_2">
+    <widget class="QLabel" name="AIRINAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>SYNX Available:</string>
+      <string>AIRIN Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>SYNX Pending:</string>
+      <string>AIRIN Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="SYNXPendingLabel">
+    <widget class="QLabel" name="AIRINPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex SYNX Deposit Address:</string>
+      <string>Bittrex AIRIN Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate SYNDICATE Deposit Address</string>
+      <string>Generate AIRIN Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../syndicate.qrc">
+      <iconset resource="../airin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertSyndicate">
+     <widget class="QPushButton" name="btnConvertAirin">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../syndicate.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../airin.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../syndicate.qrc">
+      <iconset resource="../airin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../syndicate.qrc"/>
+  <include location="../airin.qrc"/>
  </resources>
  <connections/>
 </ui>

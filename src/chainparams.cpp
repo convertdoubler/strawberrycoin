@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Syndicate developers
+// Copyright (c) 2018 The Airin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    // SyndicateDevs - RELEASE CHANGE - Checkpoins, timestamp of last checkpoint, total nr. of transactions
+    // AirinDevs - RELEASE CHANGE - Checkpoins, timestamp of last checkpoint, total nr. of transactions
     (       0, uint256("000007bd0316ca5a1ebd628cbc910946031f25a65d469de48a74daab256b52a5"))          
     (       2, uint256("00000d9261d37ddd0280371317b4c41a3b179b3d31e4f5082b7e70a85d69effe"))          
     (     512, uint256("000003db9cbd239ab8724c6aa07451c3d975bbb8aa5d89868317714a69a3ef37"))          
@@ -120,15 +120,15 @@ public:
         pchMessageStart[3] = 0xe5;
         vAlertPubKey = ParseHex("0494b3488594838306c1b91a8e4a802de046bd3f815c707f56a95f31ce8c55c947f4c2e878633fe288a35974952be12e819fe591677f845a99a85273142864b993");
         nDefaultPort = 25992;                   
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Syndicate starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Airin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;       // Halving interval
         nMaxReorganizationDepth = 100;          
         nEnforceBlockUpgradeMajority = 750;     
         nRejectBlockOutdatedMajority = 950;     
         nToCheckBlockUpgradeMajority = 1000;    
         nMinerThreads = 0;                      // Obsolete (**TODO**)
-        nTargetTimespan = 1 * 60;               // Syndicate: 1 day
-        nTargetSpacing = 1 * 60;                // Syndicate: 1 minute
+        nTargetTimespan = 1 * 60;               // Airin: 1 day
+        nTargetSpacing = 1 * 60;                // Airin: 1 minute
         nMaturity = 100;                        // Block maturity
         nMasternodeCountDrift = 20;             
         nMaxMoneyOut = 398360470 * COIN;        // Max. Money is calculated by 2x premine value
@@ -173,7 +173,7 @@ public:
         assert(hashGenesisBlock == uint256("0x000007bd0316ca5a1ebd628cbc910946031f25a65d469de48a74daab256b52a5"));
         assert(genesis.hashMerkleRoot == uint256("0x813325b3464787f4ca44cac15ae7b1e4cbe193048086e0e1ef89d9cd2a2afd2a"));
 
-        vSeeds.push_back(CDNSSeedData("synx.online", "seed.synx.online"));
+        vSeeds.push_back(CDNSSeedData("airin.online", "seed.airin.online"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 85);
@@ -243,8 +243,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Syndicate: 1 day
-        nTargetSpacing = 1 * 60;  // Syndicate: 1 minute
+        nTargetTimespan = 1 * 60; // Airin: 1 day
+        nTargetSpacing = 1 * 60;  // Airin: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nMaxMoneyOut = 398360470 * COIN;
@@ -270,7 +270,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("synx.online", "seed.synx.online"));
+        vSeeds.push_back(CDNSSeedData("airin.online", "seed.airin.online"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 97);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);
@@ -339,8 +339,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60;         // Syndicate: 1 day
-        nTargetSpacing = 1 * 60;                // Syndicate: 1 minutes
+        nTargetTimespan = 24 * 60 * 60;         // Airin: 1 day
+        nTargetSpacing = 1 * 60;                // Airin: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
 
         genesis.nTime = 152051740;

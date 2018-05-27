@@ -186,6 +186,6 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>syndicate-core</name>
+    <name>airin-core</name>
     </context>
 </TS>

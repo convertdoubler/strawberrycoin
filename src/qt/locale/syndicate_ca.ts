@@ -164,8 +164,8 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SYNX&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES SYNXS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AIRIN&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES AIRINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
-        <source>&amp;About SYNDICATE Core</source>
-        <translation>&amp;Sobre SYNDICATE Core</translation>
+        <source>&amp;About AIRIN Core</source>
+        <translation>&amp;Sobre AIRIN Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
-        <source>About SYNDICATE Core</source>
-        <translation>Sobre SYNDICATE Core</translation>
+        <source>About AIRIN Core</source>
+        <translation>Sobre AIRIN Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to SYNDICATE Core.</source>
-        <translation>Benvingut a SYNDICATE Core.</translation>
+        <source>Welcome to AIRIN Core.</source>
+        <translation>Benvingut a AIRIN Core.</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1147,8 +1147,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1310,7 +1310,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>syndicate-core</name>
+    <name>airin-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

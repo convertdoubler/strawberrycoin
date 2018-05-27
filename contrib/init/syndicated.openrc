@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/syndicate/.syndicate" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/syndicate/.syndicate"
+if [ -d "/var/lib/airin/.airin" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/airin/.airin"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/syndicated"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/airind"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/syndicate/syndicate.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/syndicated}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/syndicated.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/airin/airin.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/airind}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/airind.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-syndicate}
-BITCOIND_GROUP=${BITCOIND_GROUP:-syndicate}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/syndicated}
+BITCOIND_USER=${BITCOIND_USER:-airin}
+BITCOIND_GROUP=${BITCOIND_GROUP:-airin}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/airind}
 
-name="Syndicate Core Daemon"
-description="Syndicate crypto-currency p2p network daemon"
+name="Airin Core Daemon"
+description="Airin crypto-currency p2p network daemon"
 
-command="/usr/bin/syndicated"
+command="/usr/bin/airind"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run syndicated."
+		eerror "ERROR: You must set a secure rpcpassword to run airind."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Syndicate Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Airin Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

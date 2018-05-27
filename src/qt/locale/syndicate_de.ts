@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie SYNDICATE überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie AIRIN überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie SYNDICATE empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie AIRIN empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your SYNDICATE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre SYNDICATE-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie SYNDICATE überweisen.</translation>
+        <source>These are your AIRIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre AIRIN-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie AIRIN überweisen.</translation>
     </message>
     <message>
-        <source>These are your SYNDICATE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre SYNDICATE-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your AIRIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre AIRIN-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>SYNDICATE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SYNXs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer SYNXs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>AIRIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AIRINs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer AIRINs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SYNX&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre SYNXs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AIRIN&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre AIRINs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a Syndicate Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine SYNDICATE Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a Airin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine AIRIN Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to sign the message with</source>
-        <translation>SYNDICATE Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The AIRIN address to sign the message with</source>
+        <translation>AIRIN Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese SYNDICATE Adresse besitzt</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese AIRIN Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The SYNDICATE address the message was signed with</source>
-        <translation>Die SYNDICATE Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The AIRIN address the message was signed with</source>
+        <translation>Die AIRIN Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SYNDICATE address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen SYNDICATE-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified AIRIN address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen AIRIN-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,24 +602,24 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
-        <source>Send coins to a SYNDICATE address</source>
-        <translation>An eine SYNDICATE-Adresse überweisen</translation>
+        <source>Send coins to a AIRIN address</source>
+        <translation>An eine AIRIN-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and syndicate: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und syndicate: URIs)</translation>
+        <source>Request payments (generates QR codes and airin: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und airin: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Privatsphäre</translation>
     </message>
     <message>
-        <source>Privacy Action for zSYNX and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zSYNX und Verschleierung</translation>
+        <source>Privacy Action for zAIRIN and Obfuscation</source>
+        <translation>Privatsphäre Aktion für zAIRIN und Verschleierung</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About SYNDICATE Core</source>
-        <translation>Über.SYNDICATE Core</translation>
+        <source>&amp;About AIRIN Core</source>
+        <translation>Über.AIRIN Core</translation>
     </message>
     <message>
-        <source>Show information about SYNDICATE Core</source>
-        <translation>Zeigt Informationen über SYNDICATE Core</translation>
+        <source>Show information about AIRIN Core</source>
+        <translation>Zeigt Informationen über AIRIN Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for SYNDICATE</source>
-        <translation>Konfiguration von SYNDICATE verändern</translation>
+        <source>Modify configuration options for AIRIN</source>
+        <translation>Konfiguration von AIRIN verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your SYNDICATE addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer SYNDICATE-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your AIRIN addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer AIRIN-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified SYNDICATE addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten SYNDICATE-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified AIRIN addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten AIRIN-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -674,8 +674,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a SYNDICATE: URI or payment request</source>
-        <translation>Öffne eine SYNDICATE: URI or Zahlungsanfrage</translation>
+        <source>Open a AIRIN: URI or payment request</source>
+        <translation>Öffne eine AIRIN: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -686,16 +686,16 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the SYNDICATE Core help message to get a list with possible SYNDICATE command-line options</source>
-        <translation>Zeige die SYNDICATE-Core Hilfe, um mögliche SYNDICATE Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the AIRIN Core help message to get a list with possible AIRIN command-line options</source>
+        <translation>Zeige die AIRIN-Core Hilfe, um mögliche AIRIN Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>SYNDICATE Core client</source>
-        <translation>SYNDICATE Core Client</translation>
+        <source>AIRIN Core client</source>
+        <translation>AIRIN Core Client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to SYNDICATE network</source>
-        <translation><numerusform>%n aktive Verbindung zum SYNDICATE Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum SYNDICATE Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to AIRIN network</source>
+        <translation><numerusform>%n aktive Verbindung zum AIRIN Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum AIRIN Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -848,8 +848,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (syndicate.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "syndicate.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (airin.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "airin.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1137,8 +1137,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid SYNDICATE address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige SYNDICATE-Adresse.</translation>
+        <source>The entered address "%1" is not a valid AIRIN address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige AIRIN-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1183,16 +1183,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About SYNDICATE Core</source>
-        <translation>Über SYNDICATE Core</translation>
+        <source>About AIRIN Core</source>
+        <translation>Über AIRIN Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1238,16 +1238,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to SYNDICATE Core.</source>
-        <translation>Willkommen zu SYNDICATE Core.</translation>
+        <source>Welcome to AIRIN Core.</source>
+        <translation>Willkommen zu AIRIN Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where SYNDICATE Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie SYNDICATE Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where AIRIN Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie AIRIN Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>SYNDICATE Core will download and store a copy of the SYNDICATE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>SYNDICATE Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>AIRIN Core will download and store a copy of the AIRIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>AIRIN Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1258,8 +1258,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1396,12 +1396,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SYNDICATE addresses after it matures.
-To Add: enter percentage to give and SYNDICATE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other AIRIN addresses after it matures.
+To Add: enter percentage to give and AIRIN address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen SYNDICATE-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die SYNDICATE-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen AIRIN-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die AIRIN-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1539,48 +1539,48 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 5000 SYNX</source>
-        <translation>2 separate Masternodes verwenden um bis zu 5000 SYNX zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 AIRIN</source>
+        <translation>2 separate Masternodes verwenden um bis zu 5000 AIRIN zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 5000 SYNX</source>
-        <translation>8 separate Masternodes verwenden um bis zu 5000 SYNX zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 AIRIN</source>
+        <translation>8 separate Masternodes verwenden um bis zu 5000 AIRIN zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 SYNX to anonymize 5000 SYNX</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 SYNX um 5000 SYNX zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 AIRIN to anonymize 5000 AIRIN</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 AIRIN um 5000 AIRIN zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 SYNX to anonymize 5000 SYNX</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 SYNX um 5000 SYNX zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 AIRIN to anonymize 5000 AIRIN</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 AIRIN um 5000 AIRIN zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 SYNX per 5000 SYNX you anonymize.</source>
-        <translation>0.1 SYNX per 5000 SYNX die anonymisiert werden.</translation>
+        <source>0.1 AIRIN per 5000 AIRIN you anonymize.</source>
+        <translation>0.1 AIRIN per 5000 AIRIN die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Verschleierungskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening SYNDICATE's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den SYNDICATEs Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening AIRIN's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den AIRINs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening SYNDICATE's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den SYNDICATEs Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening AIRIN's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den AIRINs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening SYNDICATE's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den SYNDICATEs Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening AIRIN's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den AIRINs Konfigurationen ändern.</translation>
     </message>
 </context>
 <context>
@@ -1641,8 +1641,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the SYNDICATE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des SYNDICATE-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the AIRIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des AIRIN-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1661,12 +1661,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start SYNDICATE after logging in to the system.</source>
-        <translation>SYNDICATE automatisch nach dem Login starten.</translation>
+        <source>Automatically start AIRIN after logging in to the system.</source>
+        <translation>AIRIN automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start SYNDICATE on system login</source>
-        <translation>SYNDICATE automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start AIRIN on system login</source>
+        <translation>AIRIN automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1693,38 +1693,38 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting SYNDICATE.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting AIRIN.</source>
         <translation>Die Sprache der Benutzeroberflächekann hier gesetzt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/syndicate-project/syndicate-project-translations</source>
+https://www.transifex.com/airin-project/airin-project-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung hier bei:
-https://www.transifex.com/syndicate-project/syndicate-project-translations</translation>
+https://www.transifex.com/airin-project/airin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming SYNX which get automatically converted to zSYNX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des einkommenden SYNX, welcher automatisch zu zSYNX via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming AIRIN which get automatically converted to zAIRIN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des einkommenden AIRIN, welcher automatisch zu zAIRIN via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zSYNX</source>
-        <translation>Prozentsatz der automatisierten zSYNX</translation>
+        <source>Percentage of autominted zAIRIN</source>
+        <translation>Prozentsatz der automatisierten zAIRIN</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough SYNX for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend SYNX für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough AIRIN for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend AIRIN für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zSYNX Denomination</source>
-        <translation>Bevorzugte automatisierte zSYNX Stückelung </translation>
+        <source>Preferred Automint zAIRIN Denomination</source>
+        <translation>Bevorzugte automatisierte zAIRIN Stückelung </translation>
     </message>
     <message>
-        <source>Connect to the SYNDICATE network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem SYNDICATE Netzwerk verbinden.</translation>
+        <source>Connect to the AIRIN network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem AIRIN Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1854,8 +1854,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>Formular</translation>
     </message>
     <message>
-        <source>SYNX Balances</source>
-        <translation>SYNX Bilanzen</translation>
+        <source>AIRIN Balances</source>
+        <translation>AIRIN Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1882,8 +1882,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SYNDICATE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem SYNDICATE-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AIRIN network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem AIRIN-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1922,12 +1922,12 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
     </message>
     <message>
-        <source>SYNX:</source>
-        <translation>SYNX:</translation>
+        <source>AIRIN:</source>
+        <translation>AIRIN:</translation>
     </message>
     <message>
-        <source>zSYNX:</source>
-        <translation>zSYNX:</translation>
+        <source>zAIRIN:</source>
+        <translation>zAIRIN:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1969,12 +1969,12 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start syndicate: click-to-pay handler</source>
-        <translation>Kann SYNDICATE nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start airin: click-to-pay handler</source>
+        <translation>Kann AIRIN nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid SYNDICATE address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige SYNDICATE-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid AIRIN address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige AIRIN-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2055,20 +2055,20 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>SYNX which were anonymized via Zerocin Protocol</source>
-        <translation>SYNX, die über das Zerocin-Protokoll anonymisiert wurden</translation>
+        <source>AIRIN which were anonymized via Zerocin Protocol</source>
+        <translation>AIRIN, die über das Zerocin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin SYNX (zSYNX)</source>
-        <translation>Zerocoin SYNX (zSYNX)</translation>
+        <source>Zerocoin AIRIN (zAIRIN)</source>
+        <translation>Zerocoin AIRIN (zAIRIN)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Handlungen:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SYNDICATE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem SYNDICATE-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AIRIN network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem AIRIN-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Enter an amount of Synx to convert to zSynx</source>
@@ -2083,16 +2083,16 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>0</translation>
     </message>
     <message>
-        <source>zSYNX</source>
-        <translation>zSYNX</translation>
+        <source>zAIRIN</source>
+        <translation>zAIRIN</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 SYNX</source>
-        <translation>0.000 000 00 SYNX</translation>
+        <source>0.000 000 00 AIRIN</source>
+        <translation>0.000 000 00 AIRIN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2151,8 +2151,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zSYNX</source>
-        <translation>0 zSYNX</translation>
+        <source>0 zAIRIN</source>
+        <translation>0 zAIRIN</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2171,8 +2171,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Die SYNDICATE-Adresse, an die die Zahlung gesenden wird. Erstelle Sie eine lokale Zahlung an sich selbst, wenn sie leer ist.</translation>
+        <source>The AIRIN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Die AIRIN-Adresse, an die die Zahlung gesenden wird. Erstelle Sie eine lokale Zahlung an sich selbst, wenn sie leer ist.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2387,8 +2387,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations</tran
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zSYNX in </source>
-        <translation> zSYNX in </translation>
+        <source> zAIRIN in </source>
+        <translation> zAIRIN in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2437,8 +2437,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Syndicate Address</source>
-        <translation>Ungültige SYNDICATE-Adresse </translation>
+        <source>Invalid Airin Address</source>
+        <translation>Ungültige AIRIN-Adresse </translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2482,7 +2482,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zSynx Spend #: </source>
-        <translation>zSYNX Ausgeben #:</translation>
+        <translation>zAIRIN Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2528,8 +2528,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a SYNDICATE address (e.g. %1)</source>
-        <translation>SYNDICATE-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a AIRIN address (e.g. %1)</source>
+        <translation>AIRIN-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2666,8 +2666,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the SYNDICATE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne SYNDICATE-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann für einige Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the AIRIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne AIRIN-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann für einige Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2834,8 +2834,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the SYNDICATE RPC console.</source>
-        <translation>Willkommen in der SYNDICATE RPC Konsole.</translation>
+        <source>Welcome to the AIRIN RPC console.</source>
+        <translation>Willkommen in der AIRIN RPC Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2905,12 +2905,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SYNDICATE network.</source>
-        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das SYNDICATE-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AIRIN network.</source>
+        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das AIRIN-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SYNDICATE network.</source>
-        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das SYNDICATE-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AIRIN network.</source>
+        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das AIRIN-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3063,7 +3063,7 @@ Bitte haben Sie Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>SYNXs überweisen</translation>
+        <translation>AIRINs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3134,8 +3134,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 SYNX</source>
-        <translation>0 SYNX</translation>
+        <source>0 AIRIN</source>
+        <translation>0 AIRIN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3186,16 +3186,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSYNXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSYNXs in fee,&lt;br /&gt;while "at least" pays 1000 uSYNXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSYNXs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSYNXs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uSYNXs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uAIRINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAIRINs in fee,&lt;br /&gt;while "at least" pays 1000 uAIRINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uAIRINs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uAIRINs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uAIRINs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uSYNXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSYNXs in fee,&lt;br /&gt;while "total at least" pays 1000 uSYNXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uSYNXs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uSYNXs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uSYNXs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uAIRINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uAIRINs in fee,&lt;br /&gt;while "total at least" pays 1000 uAIRINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uAIRINs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uAIRINs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uAIRINs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SYNDICATE transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken ist.&lt;br /&gt;Aber sein Sie sich bewusst, dass dies am Ende in einer niemals bestätigende Transaktion endet, sobald es mehr Nachfrage nach SYNDICATE-Transaktionen gibt, als das Netzwerk verarbeiten kann.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for AIRIN transactions than the network can process.</source>
+        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken ist.&lt;br /&gt;Aber sein Sie sich bewusst, dass dies am Ende in einer niemals bestätigende Transaktion endet, sobald es mehr Nachfrage nach AIRIN-Transaktionen gibt, als das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3242,8 +3242,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized SYNX</source>
-        <translation>Anonymisierte SYNX</translation>
+        <source>Anonymized AIRIN</source>
+        <translation>Anonymisierte AIRIN</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3302,8 +3302,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>anonyme Mittel</translation>
     </message>
     <message>
-        <source>Warning: Invalid SYNDICATE address</source>
-        <translation>Warnung: Ungültige SYNDICATE-Adresse</translation>
+        <source>Warning: Invalid AIRIN address</source>
+        <translation>Warnung: Ungültige AIRIN-Adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3409,8 +3409,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to send the payment to</source>
-        <translation>SYNDICATE-Adresse, an die überwiesen werden soll</translation>
+        <source>The AIRIN address to send the payment to</source>
+        <translation>AIRIN-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3449,8 +3449,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the SYNDICATE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SYNDICATE network.</source>
-        <translation>Eine an die SYNDICATE-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das SYNDICATE-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the AIRIN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the AIRIN network.</source>
+        <translation>Eine an die AIRIN-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das AIRIN-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3476,8 +3476,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>SYNDICATE Core is shutting down...</source>
-        <translation>SYNDICATE Core wird beendet...</translation>
+        <source>AIRIN Core is shutting down...</source>
+        <translation>AIRIN Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3499,8 +3499,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie sie besitzen. Sein Sie vorsichtig nichts nebulöses zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu denen zu untergeben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to sign the message with</source>
-        <translation>SYNDICATE Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The AIRIN address to sign the message with</source>
+        <translation>AIRIN Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3531,16 +3531,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese SYNDICATE Adresse besitzt</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese AIRIN Adresse besitzt</translation>
     </message>
     <message>
-        <source>The SYNDICATE address the message was signed with</source>
-        <translation>Die SYNDICATE Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The AIRIN address the message was signed with</source>
+        <translation>Die AIRIN Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SYNDICATE address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen SYNDICATE-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified AIRIN address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen AIRIN-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3626,8 +3626,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Core</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3642,8 +3642,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Die PIVX Core Entwickler</translation>
     </message>
     <message>
-        <source>The SYNDICATE Core developers</source>
-        <translation>Die SYNDICATE Core Entwickler</translation>
+        <source>The AIRIN Core developers</source>
+        <translation>Die AIRIN Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3817,7 +3817,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte SYNXs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine SYNXs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte AIRINs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine AIRINs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3963,23 +3963,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Converted Synx to zSynx</source>
-        <translation>Umgewandeltes SYNX zu zSYNX</translation>
+        <translation>Umgewandeltes AIRIN zu zAIRIN</translation>
     </message>
     <message>
         <source>Spent zSynx</source>
-        <translation>Ausgeben zSYNX</translation>
+        <translation>Ausgeben zAIRIN</translation>
     </message>
     <message>
         <source>Received Synx from zSynx</source>
-        <translation>Empfangene SYNX von zSYNX</translation>
+        <translation>Empfangene AIRIN von zAIRIN</translation>
     </message>
     <message>
         <source>Minted Change as zSynx from zSynx Spend</source>
-        <translation>Geprägtes Wechselgeld als zSYNX von zSYNX Ausgabe</translation>
+        <translation>Geprägtes Wechselgeld als zAIRIN von zAIRIN Ausgabe</translation>
     </message>
     <message>
         <source>Converted zSynx to Synx</source>
-        <translation>Umgewandeltes zSYNX zu SYNX</translation>
+        <translation>Umgewandeltes zAIRIN zu AIRIN</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3987,7 +3987,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zSynx Accumulator</source>
-        <translation>zSYNX Speicher</translation>
+        <translation>zAIRIN Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4098,7 +4098,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Received Synx from zSynx</source>
-        <translation>Empfangen SYNX von zSYNX</translation>
+        <translation>Empfangen AIRIN von zAIRIN</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4110,7 +4110,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zSynx</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zSYNX</translation>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zAIRIN</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4231,11 +4231,11 @@ Bitte haben Sie Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>SYNXs überweisen</translation>
+        <translation>AIRINs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 SYNX.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 SYNX begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 AIRIN.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 AIRIN begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4281,7 +4281,7 @@ Bitte haben Sie Geduld...</translation>
     <name>ZSynxControlDialog</name>
     <message>
         <source>Select zSynx to Spend</source>
-        <translation>Auswahl zSYNX als Ausgabe</translation>
+        <translation>Auswahl zAIRIN als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4293,7 +4293,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zSynx</source>
-        <translation>zSYNX</translation>
+        <translation>zAIRIN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4305,7 +4305,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>syndicate-core</name>
+    <name>airin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4323,8 +4323,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Der berechnete Akkumulator-Checkpoint ist nicht das, was vom Blockindex aufgezeichnet wurde</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. SYNDICATE Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. SYNDICATE Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. AIRIN Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. AIRIN Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -4335,8 +4335,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Lösche alle Wallet-Transaktionen und stelle nur diese Teile der Blockchain wieder her durch -neuscan beim Start</translation>
     </message>
     <message>
-        <source>Disable all SYNDICATE specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktiviere alle SYNDICATE-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
+        <source>Disable all AIRIN specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Deaktiviere alle AIRIN-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4379,12 +4379,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in SYNX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in SYNX/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
+        <source>Fees (in AIRIN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in AIRIN/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in SYNX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in SYNX/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in AIRIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in AIRIN/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4455,8 +4455,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Copyright (C) 2014-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The SYNDICATE Core Developers</source>
-        <translation>Copyright (C) 2015-%i The SYNDICATE Core Developers</translation>
+        <source>Copyright (C) 2015-%i The AIRIN Core Developers</source>
+        <translation>Copyright (C) 2015-%i The AIRIN Core Developers</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4491,8 +4491,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. SYNDICATE Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. SYNDICATE Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. AIRIN Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. AIRIN Core schaltet ab.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4783,8 +4783,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart SYNDICATE Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte SYNDICATE Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart AIRIN Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte AIRIN Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

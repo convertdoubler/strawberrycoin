@@ -1,9 +1,9 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2018 The Syndicate developers
+// Copyright (c) 2018 The Airin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNDICATE_ZEROCOIN_H
-#define SYNDICATE_ZEROCOIN_H
+#ifndef AIRIN_ZEROCOIN_H
+#define AIRIN_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -190,4 +190,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //SYNDICATE_ZEROCOIN_H
+#endif //AIRIN_ZEROCOIN_H

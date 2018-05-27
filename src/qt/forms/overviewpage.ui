@@ -259,7 +259,7 @@
                           <cursorShape>WhatsThisCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SYNDICATE network after a connection is established, but this process has not completed yet.</string>
+                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the AIRIN network after a connection is established, but this process has not completed yet.</string>
                          </property>
                          <property name="styleSheet">
                           <string notr="true">QLabel { color: red; }</string>
@@ -333,7 +333,7 @@
                           <string>Your current spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -365,7 +365,7 @@
                           <string>Total Balance, including all unavailable coins.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -433,12 +433,12 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>SYNX Balance</string>
+                          <string>AIRIN Balance</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLabel" name="labelSYNXPercent">
+                        <widget class="QLabel" name="labelAIRINPercent">
                          <property name="text">
                           <string notr="true">0 %</string>
                          </property>
@@ -525,7 +525,7 @@
                           <string>Your current spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -550,7 +550,7 @@
                           <string>Your current balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -582,7 +582,7 @@
                           <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -607,7 +607,7 @@
                           <string>Unconfirmed transactions to watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -639,7 +639,7 @@
                           <string>Staked or masternode rewards that has not yet matured</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -664,7 +664,7 @@
                           <string>Staked or masternode rewards in watch-only addresses that has not yet matured</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -677,7 +677,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked SYNX or Masternode collaterals. These are excluded from zSYNX minting.</string>
+                          <string>Locked AIRIN or Masternode collaterals. These are excluded from zAIRIN minting.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -696,10 +696,10 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked SYNX or Masternode collaterals. These are excluded from zSYNX minting.</string>
+                          <string>Locked AIRIN or Masternode collaterals. These are excluded from zAIRIN minting.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -724,7 +724,7 @@
                           <string>Current locked balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -737,7 +737,7 @@
                        <item row="5" column="0">
                         <widget class="QLabel" name="labelTotalText">
                          <property name="toolTip">
-                          <string>Your current SYNDICATE balance, unconfirmed and immature transactions included</string>
+                          <string>Your current AIRIN balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
                           <string>Total:</string>
@@ -756,10 +756,10 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Your current SYNDICATE balance, unconfirmed and immature transactions included</string>
+                          <string>Your current AIRIN balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -784,7 +784,7 @@
                           <string>Current total balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -855,12 +855,12 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>zSYNX Balance</string>
+                          <string>zAIRIN Balance</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLabel" name="labelzSYNXPercent">
+                        <widget class="QLabel" name="labelzAIRINPercent">
                          <property name="text">
                           <string notr="true">0 %</string>
                          </property>
@@ -909,7 +909,7 @@
                         <widget class="QLabel" name="labelzBalanceMatureText">
                          <property name="toolTip">
                           <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zSYNX are spendable.</string>
+These zAIRIN are spendable.</string>
                          </property>
                          <property name="text">
                           <string>Available:</string>
@@ -926,10 +926,10 @@ These zSYNX are spendable.</string>
                          </property>
                          <property name="toolTip">
                           <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zSYNX are spendable.</string>
+These zAIRIN are spendable.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -960,7 +960,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
 Immature: confirmed, but less than 3 mints of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -991,7 +991,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
 Immature: confirmed, but less than 3 mints of the same denomination after it was minted</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1001,7 +1001,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelzBalanceText">
                          <property name="toolTip">
-                          <string>Your current zSYNX balance, unconfirmed and immature zSYNX included.</string>
+                          <string>Your current zAIRIN balance, unconfirmed and immature zAIRIN included.</string>
                          </property>
                          <property name="text">
                           <string>Total:</string>
@@ -1020,10 +1020,10 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Your current zSYNX balance, unconfirmed and immature zSYNX included.</string>
+                          <string>Your current zAIRIN balance, unconfirmed and immature zAIRIN included.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 SYNX</string>
+                          <string notr="true">0.000 000 00 AIRIN</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1114,7 +1114,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                        <cursorShape>WhatsThisCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the SYNDICATE network after a connection is established, but this process has not completed yet.</string>
+                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the AIRIN network after a connection is established, but this process has not completed yet.</string>
                       </property>
                       <property name="styleSheet">
                        <string notr="true">QLabel { color: red; }</string>

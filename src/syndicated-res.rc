@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "SYNDICATE"
-            VALUE "FileDescription",    "syndicated (OSS daemon/client for SYNDICATE)"
+            VALUE "CompanyName",        "AIRIN"
+            VALUE "FileDescription",    "airind (OSS daemon/client for AIRIN)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "syndicated"
+            VALUE "InternalName",       "airind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "syndicated.exe"
-            VALUE "ProductName",        "syndicated"
+            VALUE "OriginalFilename",   "airind.exe"
+            VALUE "ProductName",        "airind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

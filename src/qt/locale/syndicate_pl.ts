@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SYNX&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE SYNX!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AIRIN&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE AIRIN!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres SYNDICATE jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres AIRIN jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>&amp;Rdzeń SYNDICATE</translation>
+        <source>AIRIN Core</source>
+        <translation>&amp;Rdzeń AIRIN</translation>
     </message>
     <message>
-        <source>Send coins to a SYNDICATE address</source>
-        <translation>Wyślij monety do adresu SYNDICATE</translation>
+        <source>Send coins to a AIRIN address</source>
+        <translation>Wyślij monety do adresu AIRIN</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and syndicate: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i syndicate:URI)</translation>
+        <source>Request payments (generates QR codes and airin: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i airin:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About SYNDICATE Core</source>
+        <source>&amp;About AIRIN Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about SYNDICATE Core</source>
+        <source>Show information about AIRIN Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for SYNDICATE</source>
-        <translation>Modyfikuj opcje konfiguracji SYNDICATE</translation>
+        <source>Modify configuration options for AIRIN</source>
+        <translation>Modyfikuj opcje konfiguracji AIRIN</translation>
     </message>
     <message>
-        <source>Sign messages with your SYNDICATE addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami SYNDICATE, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your AIRIN addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami AIRIN, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified SYNDICATE addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu SYNDICATE</translation>
+        <source>Verify messages to ensure they were signed with specified AIRIN addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu AIRIN</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a SYNDICATE: URI or payment request</source>
-        <translation>Otwórz SYNDICATE: URI i żądanie zapłaty</translation>
+        <source>Open a AIRIN: URI or payment request</source>
+        <translation>Otwórz AIRIN: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the SYNDICATE Core help message to get a list with possible SYNDICATE command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia SYNDICATE, aby dostać listę możliwych opcji SYNDICATE command-line</translation>
+        <source>Show the AIRIN Core help message to get a list with possible AIRIN command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia AIRIN, aby dostać listę możliwych opcji AIRIN command-line</translation>
     </message>
     <message>
-        <source>SYNDICATE Core client</source>
-        <translation>Rdzeń SYNDICATE klient</translation>
+        <source>AIRIN Core client</source>
+        <translation>Rdzeń AIRIN klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>&amp;Rdzeń SYNDICATE</translation>
+        <source>AIRIN Core</source>
+        <translation>&amp;Rdzeń AIRIN</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>&amp;Rdzeń SYNDICATE</translation>
+        <source>AIRIN Core</source>
+        <translation>&amp;Rdzeń AIRIN</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start SYNDICATE after logging in to the system.</source>
-        <translation>Automatycznie uruchom SYNDICATE po zalogowaniu do systemu</translation>
+        <source>Automatically start AIRIN after logging in to the system.</source>
+        <translation>Automatycznie uruchom AIRIN po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start SYNDICATE on system login</source>
-        <translation>&amp;Uruchom SYNDICATE podczas logowania do systemu</translation>
+        <source>&amp;Start AIRIN on system login</source>
+        <translation>&amp;Uruchom AIRIN podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting SYNDICATE.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie SYNDICATE</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting AIRIN.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie AIRIN</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/syndicate-project/syndicate-project-translations</source>
+https://www.transifex.com/airin-project/airin-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/syndicate-project/syndicate-project-translations </translation>
+https://www.transifex.com/airin-project/airin-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the SYNDICATE network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią SYNDICATE poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the AIRIN network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią AIRIN poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations </tra
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a SYNDICATE address (e.g. %1)</source>
-        <translation>Wprowadź adres SYNDICATE (np. %1)</translation>
+        <source>Enter a AIRIN address (e.g. %1)</source>
+        <translation>Wprowadź adres AIRIN (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations </tra
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres SYNDICATE jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres AIRIN jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations </tra
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>&amp;Rdzeń SYNDICATE</translation>
+        <source>AIRIN Core</source>
+        <translation>&amp;Rdzeń AIRIN</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/syndicate-project/syndicate-project-translations </tra
     </message>
     </context>
 <context>
-    <name>syndicate-core</name>
+    <name>airin-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

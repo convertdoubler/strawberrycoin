@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your SYNDICATE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun SYNDICATE osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your AIRIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun AIRIN osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your SYNDICATE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun SYNDICATE osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your AIRIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun AIRIN osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>SYNDICATE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SYNXs from being stolen by malware infecting your computer.</source>
-        <translation>SYNDICATE sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella SYNXien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>AIRIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AIRINs from being stolen by malware infecting your computer.</source>
+        <translation>AIRIN sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella AIRINien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SYNX&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki SYNXisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR AIRIN&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki AIRINisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Syndicate Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Syndicate osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a Airin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä Airin osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to sign the message with</source>
-        <translation>SYNDICATE osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The AIRIN address to sign the message with</source>
+        <translation>AIRIN osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän SYNDICATE osoitteen</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän AIRIN osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The SYNDICATE address the message was signed with</source>
-        <translation>SYNDICATE osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The AIRIN address the message was signed with</source>
+        <translation>AIRIN osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SYNDICATE address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla SYNDICATE osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified AIRIN address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla AIRIN osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Ydin</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a SYNDICATE address</source>
-        <translation>Lähetä kolikkoja SYNDICATE osoitteeseen</translation>
+        <source>Send coins to a AIRIN address</source>
+        <translation>Lähetä kolikkoja AIRIN osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and syndicate: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja syndicate: URIja)</translation>
+        <source>Request payments (generates QR codes and airin: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja airin: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About SYNDICATE Core</source>
-        <translation>SYNDICATE Core &amp;ytimestä</translation>
+        <source>&amp;About AIRIN Core</source>
+        <translation>AIRIN Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about SYNDICATE Core</source>
-        <translation>Näytä tietoja SYNDICATE Ytimestä</translation>
+        <source>Show information about AIRIN Core</source>
+        <translation>Näytä tietoja AIRIN Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for SYNDICATE</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja SYNDICATE:lle</translation>
+        <source>Modify configuration options for AIRIN</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja AIRIN:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your SYNDICATE addresses to prove you own them</source>
+        <source>Sign messages with your AIRIN addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified SYNDICATE addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä SYNDICATE osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified AIRIN addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä AIRIN osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a SYNDICATE: URI or payment request</source>
-        <translation>Avaa SYNDICATE: URI tai pyydä maksua</translation>
+        <source>Open a AIRIN: URI or payment request</source>
+        <translation>Avaa AIRIN: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the SYNDICATE Core help message to get a list with possible SYNDICATE command-line options</source>
-        <translation>Näytä SYNDICATE Ydin apuviesti saadaksesi lista mahdollisista SYNDICATE komentolinja komennoista.</translation>
+        <source>Show the AIRIN Core help message to get a list with possible AIRIN command-line options</source>
+        <translation>Näytä AIRIN Ydin apuviesti saadaksesi lista mahdollisista AIRIN komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>SYNDICATE Core client</source>
-        <translation>SYNDICATE Ydin asiakasohjelma</translation>
+        <source>AIRIN Core client</source>
+        <translation>AIRIN Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Ydin</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to SYNDICATE Core.</source>
-        <translation>Tervetuloa SYNDICATE Ytimeen.</translation>
+        <source>Welcome to AIRIN Core.</source>
+        <translation>Tervetuloa AIRIN Ytimeen.</translation>
     </message>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Ydin</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 5000 SYNX</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 5000 SYNDICATE</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 AIRIN</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 5000 AIRIN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 5000 SYNX</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 5000 SYNDICATE</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 AIRIN</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 5000 AIRIN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 SYNX to anonymize 5000 SYNX</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 SYNX anonymoidaksesi 5000 SYNDICATE</translation>
+        <source>This option is the quickest and will cost about ~0.025 AIRIN to anonymize 5000 AIRIN</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 AIRIN anonymoidaksesi 5000 AIRIN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 SYNX to anonymize 5000 SYNX</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 SYNDICATE anonymoidaksesi 5000 SYNDICATE</translation>
+        <source>This option is moderately fast and will cost about 0.05 AIRIN to anonymize 5000 AIRIN</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 AIRIN anonymoidaksesi 5000 AIRIN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 SYNX per 5000 SYNX you anonymize.</source>
-        <translation>0.1 per 5000 SYNDICATE, jotka anonymisoit.</translation>
+        <source>0.1 AIRIN per 5000 AIRIN you anonymize.</source>
+        <translation>0.1 per 5000 AIRIN, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start SYNDICATE after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä SYNDICATE kun kirjaudut sisään.</translation>
+        <source>Automatically start AIRIN after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä AIRIN kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start SYNDICATE on system login</source>
-        <translation>&amp;Aloita SYNDICATE järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start AIRIN on system login</source>
+        <translation>&amp;Aloita AIRIN järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting SYNDICATE.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting AIRIN.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the SYNDICATE network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä SYNDICATE verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the AIRIN network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä AIRIN verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the SYNDICATE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa SYNDICATE debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the AIRIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa AIRIN debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the SYNDICATE RPC console.</source>
-        <translation>Tervetuloa SYNDICATE RPC konsoliin.</translation>
+        <source>Welcome to the AIRIN RPC console.</source>
+        <translation>Tervetuloa AIRIN RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SYNDICATE network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana SYNDICATE verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AIRIN network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana AIRIN verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SYNDICATE network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana SYNDICATE  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AIRIN network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana AIRIN  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 SYNX</source>
-        <translation>0 SYNX</translation>
+        <source>0 AIRIN</source>
+        <translation>0 AIRIN</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid SYNDICATE address</source>
-        <translation>Varoitus: Virheellinen SYNDICATE osoite</translation>
+        <source>Warning: Invalid AIRIN address</source>
+        <translation>Varoitus: Virheellinen AIRIN osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to send the payment to</source>
-        <translation>SYNDICATE osoite johon maksu lähetetään</translation>
+        <source>The AIRIN address to send the payment to</source>
+        <translation>AIRIN osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>SYNDICATE Core is shutting down...</source>
-        <translation>SYNDICATE core sammuu...</translation>
+        <source>AIRIN Core is shutting down...</source>
+        <translation>AIRIN core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The SYNDICATE address to sign the message with</source>
-        <translation>SYNDICATE osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The AIRIN address to sign the message with</source>
+        <translation>AIRIN osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this SYNDICATE address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän SYNDICATE osoitteen</translation>
+        <source>Sign the message to prove you own this AIRIN address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän AIRIN osoitteen</translation>
     </message>
     <message>
-        <source>The SYNDICATE address the message was signed with</source>
-        <translation>SYNDICATE osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The AIRIN address the message was signed with</source>
+        <translation>AIRIN osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified SYNDICATE address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla SYNDICATE osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified AIRIN address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla AIRIN osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>SYNDICATE Core</source>
-        <translation>SYNDICATE Ydin</translation>
+        <source>AIRIN Core</source>
+        <translation>AIRIN Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>PIVX Core kehittäjät</translation>
     </message>
     <message>
-        <source>The SYNDICATE Core developers</source>
-        <translation>SYNDICATE core kehittäjät</translation>
+        <source>The AIRIN Core developers</source>
+        <translation>AIRIN core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2541,7 +2541,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>syndicate-core</name>
+    <name>airin-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of SYNDICATE Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version SYNDICATE Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of AIRIN Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version AIRIN Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

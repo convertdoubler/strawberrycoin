@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start SYNDICATE after logging in to the system.</string>
+          <string>Automatically start AIRIN after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start SYNDICATE on system login</string>
+          <string>&amp;Start AIRIN on system login</string>
          </property>
         </widget>
        </item>
@@ -136,13 +136,13 @@
           <bool>false</bool>
          </property>
          <property name="toolTip">
-          <string>Enable automatic minting of SYNX units to zSYNX</string>
+          <string>Enable automatic minting of AIRIN units to zAIRIN</string>
          </property>
          <property name="layoutDirection">
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="text">
-          <string>Enable zSYNX Automint</string>
+          <string>Enable zAIRIN Automint</string>
          </property>
         </widget>
        </item>
@@ -154,10 +154,10 @@
             <bool>false</bool>
            </property>
            <property name="toolTip">
-            <string>Percentage of incoming SYNX which get automatically converted to zSYNX via Zerocoin Protocol (min: 10%)</string>
+            <string>Percentage of incoming AIRIN which get automatically converted to zAIRIN via Zerocoin Protocol (min: 10%)</string>
            </property>
            <property name="text">
-            <string>Percentage of autominted zSYNX</string>
+            <string>Percentage of autominted zAIRIN</string>
            </property>
           </widget>
          </item>
@@ -193,10 +193,10 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough SYNX for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough AIRIN for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zSYNX Denomination</string>
+            <string>Preferred Automint zAIRIN Denomination</string>
            </property>
           </widget>
          </item>
@@ -212,7 +212,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough SYNX for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough AIRIN for this denomination is available</string>
            </property>
            <property name="maxVisibleItems">
             <number>9</number>
@@ -314,7 +314,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the SYNDICATE client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the AIRIN client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -334,7 +334,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the SYNDICATE network through a SOCKS5 proxy.</string>
+          <string>Connect to the AIRIN network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -500,7 +500,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting SYNDICATE.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting AIRIN.</string>
            </property>
           </widget>
          </item>
@@ -522,7 +522,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/syndicate-project/syndicate-project-translations</string>
+https://www.transifex.com/airin-project/airin-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

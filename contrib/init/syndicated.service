@@ -1,19 +1,19 @@
 [Unit]
-Description=Syndicate's distributed currency daemon
+Description=Airin's distributed currency daemon
 After=network.target
 
 [Service]
-User=syndicate
-Group=syndicate
+User=airin
+Group=airin
 
 Type=forking
-PIDFile=/var/lib/syndicated/syndicated.pid
+PIDFile=/var/lib/airind/airind.pid
 
-ExecStart=/usr/bin/syndicated -daemon -pid=/var/lib/syndicated/syndicated.pid \
-          -conf=/etc/syndicate/syndicate.conf -datadir=/var/lib/syndicated
+ExecStart=/usr/bin/airind -daemon -pid=/var/lib/airind/airind.pid \
+          -conf=/etc/airin/airin.conf -datadir=/var/lib/airind
 
-ExecStop=-/usr/bin/syndicate-cli -conf=/etc/syndicate/syndicate.conf \
-         -datadir=/var/lib/syndicated stop
+ExecStop=-/usr/bin/airin-cli -conf=/etc/airin/airin.conf \
+         -datadir=/var/lib/airind stop
 
 Restart=always
 PrivateTmp=true

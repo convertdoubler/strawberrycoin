@@ -19,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(SYNX);
-    unitlist.append(mSYNX);
-    unitlist.append(uSYNX);
+    unitlist.append(AIRIN);
+    unitlist.append(mAIRIN);
+    unitlist.append(uAIRIN);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case SYNX:
-    case mSYNX:
-    case uSYNX:
+    case AIRIN:
+    case mAIRIN:
+    case uAIRIN:
         return true;
     default:
         return false;
@@ -40,12 +40,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case SYNX:
-        return QString("syndicate");
-    case mSYNX:
-        return QString("msyndicate");
-    case uSYNX:
-        return QString::fromUtf8("usyndicate");
+    case AIRIN:
+        return QString("airin");
+    case mAIRIN:
+        return QString("mairin");
+    case uAIRIN:
+        return QString::fromUtf8("uairin");
     default:
         return QString("???");
     }
@@ -55,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case SYNX:
-            return QString("SYNX");
-        case mSYNX:
-            return QString("mSYNX");
-        case uSYNX:
-            return QString::fromUtf8("μSYNX");
+        case AIRIN:
+            return QString("AIRIN");
+        case mAIRIN:
+            return QString("mAIRIN");
+        case uAIRIN:
+            return QString::fromUtf8("μAIRIN");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case SYNX:
-            return QString("tSYNX");
-        case mSYNX:
-            return QString("mtSYNX");
-        case uSYNX:
-            return QString::fromUtf8("μtSYNX");
+        case AIRIN:
+            return QString("tAIRIN");
+        case mAIRIN:
+            return QString("mtAIRIN");
+        case uAIRIN:
+            return QString::fromUtf8("μtAIRIN");
         default:
             return QString("???");
         }
@@ -82,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case SYNX:
-            return QString("SYNX");
-        case mSYNX:
-            return QString("Milli-SYNX (1 / 1" THIN_SP_UTF8 "000)");
-        case uSYNX:
-            return QString("Micro-SYNX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case AIRIN:
+            return QString("AIRIN");
+        case mAIRIN:
+            return QString("Milli-AIRIN (1 / 1" THIN_SP_UTF8 "000)");
+        case uAIRIN:
+            return QString("Micro-AIRIN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case SYNX:
-            return QString("TestSYNXs");
-        case mSYNX:
-            return QString("Milli-TestSYNX (1 / 1" THIN_SP_UTF8 "000)");
-        case uSYNX:
-            return QString("Micro-TestSYNX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case AIRIN:
+            return QString("TestAIRINs");
+        case mAIRIN:
+            return QString("Milli-TestAIRIN (1 / 1" THIN_SP_UTF8 "000)");
+        case uAIRIN:
+            return QString("Micro-TestAIRIN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -108,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case SYNX:
+    case AIRIN:
         return 100000000;
-    case mSYNX:
+    case mAIRIN:
         return 100000;
-    case uSYNX:
+    case uAIRIN:
         return 100;
     default:
         return 100000000;
@@ -122,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case SYNX:
+    case AIRIN:
         return 8;
-    case mSYNX:
+    case mAIRIN:
         return 5;
-    case uSYNX:
+    case uAIRIN:
         return 2;
     default:
         return 0;

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Syndicate"
-            VALUE "FileDescription",    "Syndicate-cli (OSS RPC client for Syndicate)"
+            VALUE "CompanyName",        "Airin"
+            VALUE "FileDescription",    "Airin-cli (OSS RPC client for Airin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "syndicate-cli"
+            VALUE "InternalName",       "airin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "syndicate-cli.exe"
-            VALUE "ProductName",        "Syndicate-cli"
+            VALUE "OriginalFilename",   "airin-cli.exe"
+            VALUE "ProductName",        "Airin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

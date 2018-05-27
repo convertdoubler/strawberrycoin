@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/syndicate-config.h \
+           src/airin-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/syndicate-config.h \
+           src/config/airin-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -332,7 +332,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/syndicate.moc \
+           src/qt/airin.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -373,9 +373,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/syndicate-cli.cpp \
-           src/syndicate-tx.cpp \
-           src/syndicate.cpp \
+           src/airin-cli.cpp \
+           src/airin-tx.cpp \
+           src/airin.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,8 +470,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/syndicate.cpp \
-           src/qt/syndicatestrings.cpp \
+           src/qt/airin.cpp \
+           src/qt/airinstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_syndicate.cpp \
+           src/test/test_airin.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,21 +640,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/syndicate.qrc src/qt/syndicate_locale.qrc
+RESOURCES += src/qt/airin.qrc src/qt/airin_locale.qrc
 
-TRANSLATIONS += src/qt/locale/syndicate_bg.ts \
-                src/qt/locale/syndicate_de.ts \
-                src/qt/locale/syndicate_en.ts \
-                src/qt/locale/syndicate_es.ts \
-                src/qt/locale/syndicate_fi.ts \
-                src/qt/locale/syndicate_fr.ts \
-                src/qt/locale/syndicate_it.ts \
-                src/qt/locale/syndicate_ja.ts \
-                src/qt/locale/syndicate_pl.ts \
-                src/qt/locale/syndicate_pt.ts \
-                src/qt/locale/syndicate_ru.ts \
-                src/qt/locale/syndicate_sk.ts \
-                src/qt/locale/syndicate_sv.ts \
-                src/qt/locale/syndicate_vi.ts \
-                src/qt/locale/syndicate_zh_CN.ts \
-                src/qt/locale/syndicate_zh_TW.ts
+TRANSLATIONS += src/qt/locale/airin_bg.ts \
+                src/qt/locale/airin_de.ts \
+                src/qt/locale/airin_en.ts \
+                src/qt/locale/airin_es.ts \
+                src/qt/locale/airin_fi.ts \
+                src/qt/locale/airin_fr.ts \
+                src/qt/locale/airin_it.ts \
+                src/qt/locale/airin_ja.ts \
+                src/qt/locale/airin_pl.ts \
+                src/qt/locale/airin_pt.ts \
+                src/qt/locale/airin_ru.ts \
+                src/qt/locale/airin_sk.ts \
+                src/qt/locale/airin_sv.ts \
+                src/qt/locale/airin_vi.ts \
+                src/qt/locale/airin_zh_CN.ts \
+                src/qt/locale/airin_zh_TW.ts

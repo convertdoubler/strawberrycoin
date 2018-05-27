@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.syndicate.Syndicate-Qt";
+        return @"io.airin.Airin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

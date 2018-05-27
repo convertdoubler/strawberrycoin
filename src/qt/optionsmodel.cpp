@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/syndicate-config.h"
+#include "config/airin-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::SYNX);
+        settings.setValue("nDisplayUnit", BitcoinUnits::AIRIN);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -87,10 +87,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizeSyndicateAmount"))
-        settings.setValue("nAnonymizeSyndicateAmount", 1000);
+    if (!settings.contains("nAnonymizeAirinAmount"))
+        settings.setValue("nAnonymizeAirinAmount", 1000);
 
-    nAnonymizeSyndicateAmount = settings.value("nAnonymizeSyndicateAmount").toLongLong();
+    nAnonymizeAirinAmount = settings.value("nAnonymizeAirinAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -164,8 +164,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeSyndicateAmount"))
-        SoftSetArg("-anonymizesyndicateamount", settings.value("nAnonymizeSyndicateAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeAirinAmount"))
+        SoftSetArg("-anonymizeairinamount", settings.value("nAnonymizeAirinAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -176,7 +176,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in syndicate.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in airin.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -256,8 +256,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeSyndicateAmount:
-            return QVariant(nAnonymizeSyndicateAmount);
+        case AnonymizeAirinAmount:
+            return QVariant(nAnonymizeAirinAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -386,10 +386,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizeSyndicateAmount:
-            nAnonymizeSyndicateAmount = value.toInt();
-            settings.setValue("nAnonymizeSyndicateAmount", nAnonymizeSyndicateAmount);
-            emit anonymizeSyndicateAmountChanged(nAnonymizeSyndicateAmount);
+        case AnonymizeAirinAmount:
+            nAnonymizeAirinAmount = value.toInt();
+            settings.setValue("nAnonymizeAirinAmount", nAnonymizeAirinAmount);
+            emit anonymizeAirinAmountChanged(nAnonymizeAirinAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

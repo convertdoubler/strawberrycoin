@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../syndicate.qrc"/>
+  <include location="../airin.qrc"/>
  </resources>
  <connections/>
 </ui>

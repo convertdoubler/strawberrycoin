@@ -1,9 +1,9 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2018 The Syndicate developers
+// Copyright (c) 2018 The Airin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef SYNDICATE_ACCUMULATORMAP_H
-#define SYNDICATE_ACCUMULATORMAP_H
+#ifndef AIRIN_ACCUMULATORMAP_H
+#define AIRIN_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -21,4 +21,4 @@ public:
     uint256 GetCheckpoint();
     void Reset();
 };
-#endif //SYNDICATE_ACCUMULATORMAP_H
+#endif //AIRIN_ACCUMULATORMAP_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZSYNXCONTROLDIALOG_H
-#define ZSYNXCONTROLDIALOG_H
+#ifndef ZAIRINCONTROLDIALOG_H
+#define ZAIRINCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -52,4 +52,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZSYNXCONTROLDIALOG_H
+#endif // ZAIRINCONTROLDIALOG_H

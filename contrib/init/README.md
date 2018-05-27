@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: syndicated.service
-Upstart: syndicated.conf
-OpenRC:  syndicated.openrc
-         syndicated.openrcconf
-CentOS:  syndicated.init
+SystemD: airind.service
+Upstart: airind.conf
+OpenRC:  airind.openrc
+         airind.openrcconf
+CentOS:  airind.init
 
 have been made available to assist packagers in creating node packages here.
 
