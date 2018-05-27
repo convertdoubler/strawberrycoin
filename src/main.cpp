@@ -2121,10 +2121,18 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 0; 
 
     if (nHeight == 0) {
-        nSubsidy = 0 * COIN; // Genesis block
+        nSubsidy = 0 * COIN;
     } else if (nHeight == 1) {
-        return 1500000 * COIN; // Premine
-    } else if (nHeight > 1) {
+        return 1500000 * COIN;
+    } else if (nHeight <= 200 && nHeight > 1) {
+        nSubsidy = 1 * COIN;
+    } else if (nHeight <= 1000 && nHeight >= 201) {
+        nSubsidy = 10 * COIN;
+    } else if (nHeight <= 11000 && nHeight >= 1001) {
+        nSubsidy = 40 * COIN;
+    } else if (nHeight <= 21000 && nHeight >= 11001) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight >= 21001) {
         nSubsidy = 10 * COIN;
     } else {
         nSubsidy = 0 * COIN;
