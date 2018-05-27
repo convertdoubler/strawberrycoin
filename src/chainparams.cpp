@@ -173,7 +173,7 @@ public:
         assert(hashGenesisBlock == uint256("0x000007bd0316ca5a1ebd628cbc910946031f25a65d469de48a74daab256b52a5"));
         assert(genesis.hashMerkleRoot == uint256("0x813325b3464787f4ca44cac15ae7b1e4cbe193048086e0e1ef89d9cd2a2afd2a"));
 
-        vSeeds.push_back(CDNSSeedData("airin.online", "seed.airin.online"));
+        vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 85);
@@ -269,8 +269,6 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-
-        vSeeds.push_back(CDNSSeedData("airin.online", "seed.airin.online"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 97);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);
