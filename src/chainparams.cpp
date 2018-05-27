@@ -114,10 +114,10 @@ public:
          * a large 4-byte int at any alignment.
          */ 
         /* f22f1ce5 */
-        pchMessageStart[0] = 0xf2;
-        pchMessageStart[1] = 0x2f;
-        pchMessageStart[2] = 0x1c;
-        pchMessageStart[3] = 0xe5;
+        pchMessageStart[0] = 0x61;
+        pchMessageStart[1] = 0x31;
+        pchMessageStart[2] = 0x72;
+        pchMessageStart[3] = 0x4e;
         vAlertPubKey = ParseHex("0494b3488594838306c1b91a8e4a802de046bd3f815c707f56a95f31ce8c55c947f4c2e878633fe288a35974952be12e819fe591677f845a99a85273142864b993");
         nDefaultPort = 18821;                   
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Airin starting difficulty is 1 / 2^12
@@ -233,10 +233,10 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
         /* 2eca4d3f */
-        pchMessageStart[0] = 0x2e;
-        pchMessageStart[1] = 0xca;
-        pchMessageStart[2] = 0x4d;
-        pchMessageStart[3] = 0x3f;
+        pchMessageStart[0] = 0x1c;
+        pchMessageStart[1] = 0x62;
+        pchMessageStart[2] = 0x32;
+        pchMessageStart[3] = 0x67;
         vAlertPubKey = ParseHex("043c24f895d703d1a0837cff95d81c240e9c2a4e66e68ba5d7a607c971e131034b14747d8e7c08b2f3a7a7268eed34ad22b92a97a27eac494bedfbdfee3433959e");
         nDefaultPort = 18823;
         nEnforceBlockUpgradeMajority = 51;
@@ -327,10 +327,10 @@ public:
         strNetworkID = "regtest";
         strNetworkID = "regtest";
         /* 1276a1ff */
-        pchMessageStart[0] = 0x12;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0xa1;
-        pchMessageStart[3] = 0xff;
+        pchMessageStart[0] = 0x39;
+        pchMessageStart[1] = 0x30;
+        pchMessageStart[2] = 0x61;
+        pchMessageStart[3] = 0x63;
         nDefaultPort = 18825;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
