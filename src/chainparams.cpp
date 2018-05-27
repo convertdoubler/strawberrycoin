@@ -238,7 +238,7 @@ public:
         pchMessageStart[2] = 0x4d;
         pchMessageStart[3] = 0x3f;
         vAlertPubKey = ParseHex("043c24f895d703d1a0837cff95d81c240e9c2a4e66e68ba5d7a607c971e131034b14747d8e7c08b2f3a7a7268eed34ad22b92a97a27eac494bedfbdfee3433959e");
-        nDefaultPort = 25994;
+        nDefaultPort = 18823;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -333,7 +333,7 @@ public:
         pchMessageStart[1] = 0x76;
         pchMessageStart[2] = 0xa1;
         pchMessageStart[3] = 0xff;
-        nDefaultPort = 25996;
+        nDefaultPort = 18825;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -377,7 +377,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 25998;
+        nDefaultPort = 18828;
 
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
